@@ -1,0 +1,14 @@
+@import './breakpoints.scss';
+@import 'include-media';
+
+$redColor: #db4339;
+$darkGreyColor: #2f4858;
+$lightGreyColor: #798897;
+$textColor: #fff4f0;
+
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
