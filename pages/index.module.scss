@@ -1,5 +1,15 @@
 @import '../styles/variables.scss';
 
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+.section {
+  height: calc(100vh - 100px);
+}
+
 .landingPage {
   position: absolute;
   top: 0;
@@ -12,4 +22,44 @@
   background-size: cover;
   display: flex;
   align-items: center;
+}
+
+.bottomText {
+  position: absolute;
+  bottom: 65px;
+  left: 60px;
+  z-index: 1e5;
+
+  .marginLeft {
+    margin-left: 30px;
+  }
+}
+
+.topText {
+  position: absolute;
+  bottom: 400px;
+  right: 60px;
+  z-index: 1e5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.animatedHeader {
+  position: relative;
+
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  &::before {
+    background: blue;
+    animation: typewriter 3s steps(15) forwards infinite;
+  }
 }

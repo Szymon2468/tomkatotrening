@@ -1,0 +1,109 @@
+@import '../../../styles/variables.scss';
+
+.footer {
+  background-color: $darkGreyColor;
+  padding: 30px 60px;
+  display: flex;
+  justify-content: space-between;
+
+  @include media('<=tablet-landscape') {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .logoAndContactContainer {
+    display: flex;
+    flex-direction: column;
+
+    .logo {
+      width: 273px;
+      height: fit-content;
+      display: flex;
+      align-items: center;
+      z-index: 1e6;
+      margin-bottom: 20px;
+
+      @include media('<=big-mobile') {
+        width: 210px;
+      }
+    }
+
+    .contact {
+      margin-bottom: 30px;
+    }
+  }
+
+  .footerSideMap {
+    display: grid;
+    grid-template: repeat(13, auto) / minmax(0, 1fr);
+    gap: 10px 60px;
+
+    @include media('<=tablet-portrait') {
+      gap: 10px 30px;
+    }
+
+    p {
+      font-size: 16px;
+      text-align: start;
+
+      @include media('<=big-mobile') {
+        text-align: start;
+      }
+    }
+
+    .bigFont {
+      font-size: 17px;
+      margin-top: 10px;
+      white-space: nowrap;
+    }
+
+    @include media('>big-mobile') {
+      grid-template: repeat(6, auto) / repeat(4, auto);
+
+      .secColFirstItem {
+        grid-column-start: 2;
+        grid-row-start: 2;
+      }
+
+      .secColSecItem {
+        grid-column-start: 2;
+        grid-row-start: 3;
+      }
+
+      .secColThirdItem {
+        grid-column-start: 2;
+        grid-row-start: 4;
+      }
+
+      .secColFourthItem {
+        grid-column-start: 2;
+        grid-row-start: 5;
+      }
+
+      .secColFifthItem {
+        grid-column-start: 2;
+        grid-row-start: 6;
+      }
+
+      .thirdColFirstItem {
+        grid-column-start: 3;
+        grid-row-start: 2;
+      }
+
+      .thirdColSecItem {
+        grid-column-start: 3;
+        grid-row-start: 3;
+      }
+
+      .thirdColThirdItem {
+        grid-column-start: 3;
+        grid-row-start: 4;
+      }
+
+      .thirdColFourthItem {
+        grid-column-start: 3;
+        grid-row-start: 5;
+      }
+    }
+  }
+}

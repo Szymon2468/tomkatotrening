@@ -25,14 +25,21 @@ export default function Home() {
         <meta property='og:description' content={'opis strony'} key='ogdesc' />
       </Head>
       <MasterLayout isNavBackgroundTransparent={true}>
-        <section>
+        <section className={styles.section}>
+          <div className={styles.bottomText}>
+            <h2>Oyama, czyli Wielka Góra</h2>
+            <h2 className={styles.marginLeft}>
+              - trenuj ze mną w drodze na szczyt!
+            </h2>
+          </div>
+
           <div className={styles.landingPage}>
-            <div className={`container ${styles.contactContainer}`}>
-              <header>
+            <header>
+              <div className={styles.topText}>
                 <h1>TRENINGI KARATE I FITNESS TO...</h1>
-                <h1>LEPSZA KONDYCJA</h1>
-              </header>
-            </div>
+                <h1 className={styles.animatedHeader}>LEPSZA KONDYCJA</h1>
+              </div>
+            </header>
           </div>
         </section>
       </MasterLayout>
