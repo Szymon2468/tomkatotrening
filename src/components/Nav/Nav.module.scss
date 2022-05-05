@@ -8,6 +8,7 @@
   justify-content: space-between;
   // align-items: center;
   z-index: 10000;
+  background-color: $footerColor;
 
   @include media('<=tablet-portrait') {
     padding: 5px 30px;
@@ -23,6 +24,10 @@
     display: flex;
     align-items: center;
     z-index: 1e6;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     @include media('<=big-mobile') {
       width: 210px;
@@ -104,8 +109,8 @@
 }
 
 .transparentNav {
-  background: transparent;
-  position: relative;
+  background: transparent !important;
+  position: relative !important;
 }
 
 .hamburgerMenu {

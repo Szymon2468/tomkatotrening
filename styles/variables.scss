@@ -2,9 +2,10 @@
 @import 'include-media';
 
 $redColor: #db4339;
-$darkGreyColor: #1e1c18;
-$lightGreyColor: #798897;
+$darkGreyColor: #201f1e;
+$lightGreyColor: #3b3e41;
 $textColor: #fff4f0;
+$footerColor: rgb(26, 24, 24);
 
 @mixin flexCenter($direction) {
   display: flex;
@@ -12,3 +13,5 @@ $textColor: #fff4f0;
   align-items: center;
   flex-direction: $direction;
 }
+
+// $darkGreyColor: #1e1c18;

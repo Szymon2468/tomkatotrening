@@ -31,7 +31,7 @@ function HamburgerMenu({ logoClicked }) {
       {isHamburgerMenuOpen && (
         <div className={styles.hamburgerMenu}>
           <div className={styles.navItem} onClick={onNavClick}>
-            <Link href='/'>O MNIE</Link>
+            <Link href='/o-mnie'>O MNIE</Link>
           </div>
 
           <Collapsible

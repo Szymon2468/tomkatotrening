@@ -1,10 +1,10 @@
 @import '../styles/variables.scss';
 
-@keyframes typewriter {
-  to {
-    left: 100%;
-  }
-}
+// @keyframes typewriter {
+//   to {
+//     left: 100%;
+//   }
+// }
 
 .section {
   height: calc(100vh - 100px);
@@ -16,12 +16,16 @@
   left: 0;
   height: 100vh;
   width: 100vw;
-  background-image: url('../src/assets/homepage/homepageLandingPhoto.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url('../src/assets/homepage/homepageLandingPhoto.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  align-items: center;
+
+  header {
+    width: 100%;
+  }
 }
 
 .bottomText {
@@ -30,36 +34,66 @@
   left: 60px;
   z-index: 1e5;
 
+  z-index: 10;
+
+  h2 {
+    @include media('<=big-mobile') {
+      font-size: 17px !important;
+    }
+  }
+
+  @include media('<=mobile') {
+    left: 20px;
+  }
+
   .marginLeft {
     margin-left: 30px;
   }
 }
 
 .topText {
-  position: absolute;
-  bottom: 400px;
-  right: 60px;
+  padding: 360px 0 0 calc(100% - 150px - 446px);
   z-index: 1e5;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
+  white-space: nowrap;
+  width: fit-content;
 
-.animatedHeader {
-  position: relative;
+  z-index: 10;
 
-  &::after,
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+  @include media('<=tablet-landscape') {
+    padding: 200px 0 0 calc(100% - 60px - 446px);
   }
 
-  &::before {
-    background: blue;
-    animation: typewriter 3s steps(15) forwards infinite;
+  @include media('<=big-mobile') {
+    padding: 200px 0 0 calc(100% - 60px - 283px);
+  }
+
+  h1 {
+    margin-left: 20px;
+
+    @include media('<=big-mobile') {
+      font-size: 17px !important;
+    }
   }
 }
+
+// .animatedHeader {
+//   position: relative;
+
+//   &::after,
+//   &::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//   }
+
+//   &::before {
+//     background: blue;
+//     animation: typewriter 3s steps(15) forwards infinite;
+//   }
+// }

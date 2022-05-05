@@ -42,13 +42,14 @@ function Nav({ isNavBackgroundTransparent }) {
             height={70}
             onClick={() => {
               setLogoClicked(!logoClicked);
+              window.location.href = '/';
             }}
           ></Image>
         </div>
         {windowSize.width >= 1024 && (
           <div className={styles.links}>
             <div className={styles.linkContainer}>
-              <Link href='/'>
+              <Link href='/o-mnie'>
                 <p className={styles.link}>O MNIE</p>
               </Link>
             </div>
