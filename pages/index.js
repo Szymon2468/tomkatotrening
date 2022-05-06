@@ -98,7 +98,7 @@ export default function Home() {
                   <p>tomkatotrening@wp.pl</p>
                 </div>
               </div>
-              <div className={styles.tile}>
+              <div className={styles.homepageTile}>
                 <div className={styles.infoImg}>
                   <p>O MNIE</p>
                 </div>
@@ -115,7 +115,13 @@ export default function Home() {
                     turniejach regionalnych
                   </p>
                   <div className={styles.btnContainer}>
-                    <button type='button' className={styles.readMoreBtn}>
+                    <button
+                      type='button'
+                      className={styles.readMoreBtn}
+                      onClick={() => {
+                        window.location.href = 'o-mnie';
+                      }}
+                    >
                       <span class={styles.transition}></span>
                       <span class={styles.gradient}></span>
                       <span class={styles.label}>Czytaj więcej...</span>

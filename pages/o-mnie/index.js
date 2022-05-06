@@ -4,6 +4,8 @@ import photo2 from '../../src/assets/homepage/photo2.webp';
 import photo3 from '../../src/assets/homepage/photo3.webp';
 import MasterLayout from '../../src/components/MasterLayout/MasterLayout';
 
+import classNames from 'classnames';
+
 function About() {
   return (
     <MasterLayout isNavBackgroundTransparent={true}>
@@ -57,54 +59,62 @@ function About() {
                 </ul>
               </div>
             </div>
-
-            <div className={styles.tile}>
-              <div className={styles.text}>
-                <p>
-                  W roku 2003 przed Mistrzem Soshu Shigeru Oyama, 10 Dan
-                  pomyślnie zdałem egzamin na 1 Dan. Kolejny stopień 2 Dan
-                  zdobyłem w roku 2007, zaś 3 Dan osiągnąłem w roku 2016. Na
-                  stopień 4 Dan zdałem egzamin w 2021 roku.
-                </p>
-                <br />
-                <p>
-                  Podczas krótkiej przygody w rywalizacji sportowej udało się
-                  wywalczyć:
-                </p>
-                <ul>
-                  <li>III miejsce na Pucharze Śląska w Kata, Chorzów 2001,</li>
-                  <li>
-                    III miejsce na Mistrzostwach Polski w Kata, Oświęcim 2003,
-                  </li>
-                  <li>
-                    III miejsce na Mistrzostwach Polski w Kata, Turek 2004,
-                  </li>
-                  <li>
-                    I miejsce na Mistrzostwach Polski w Kata, Mielno 2005,
-                  </li>
-                  <li>
-                    I miejsce na Mistrzostwach Polski w Kata, Chorzów 2006,
-                  </li>
-                  <li>
-                    III miejsce na Pucharze Polski „Oyama Top” w Kumite, Jelenia
-                    Góra 2006,
-                  </li>
-                  <li>
-                    I miejsce na Mistrzostwach Polski w Kumite, Osielsko 2006,
-                  </li>
-                  <li>
-                    I miejsce na Mistrzostwach Polski w Kumite, Brzeszcze 2007.
-                  </li>
-                </ul>
+          </div>
+          <div className={styles.lightBg}>
+            <div className='container'>
+              <div className={classNames(styles.tile, styles.midTile)}>
+                <div className={styles.text}>
+                  <p>
+                    W roku 2003 przed Mistrzem Soshu Shigeru Oyama, 10 Dan
+                    pomyślnie zdałem egzamin na 1 Dan. Kolejny stopień 2 Dan
+                    zdobyłem w roku 2007, zaś 3 Dan osiągnąłem w roku 2016. Na
+                    stopień 4 Dan zdałem egzamin w 2021 roku.
+                  </p>
+                  <br />
+                  <p>
+                    Podczas krótkiej przygody w rywalizacji sportowej udało się
+                    wywalczyć:
+                  </p>
+                  <ul>
+                    <li>
+                      III miejsce na Pucharze Śląska w Kata, Chorzów 2001,
+                    </li>
+                    <li>
+                      III miejsce na Mistrzostwach Polski w Kata, Oświęcim 2003,
+                    </li>
+                    <li>
+                      III miejsce na Mistrzostwach Polski w Kata, Turek 2004,
+                    </li>
+                    <li>
+                      I miejsce na Mistrzostwach Polski w Kata, Mielno 2005,
+                    </li>
+                    <li>
+                      I miejsce na Mistrzostwach Polski w Kata, Chorzów 2006,
+                    </li>
+                    <li>
+                      III miejsce na Pucharze Polski „Oyama Top” w Kumite,
+                      Jelenia Góra 2006,
+                    </li>
+                    <li>
+                      I miejsce na Mistrzostwach Polski w Kumite, Osielsko 2006,
+                    </li>
+                    <li>
+                      I miejsce na Mistrzostwach Polski w Kumite, Brzeszcze
+                      2007.
+                    </li>
+                  </ul>
+                </div>
+                <img
+                  src={photo2.src}
+                  height={360}
+                  width={270}
+                  className={styles.infoImgRight}
+                />
               </div>
-              <img
-                src={photo2.src}
-                height={360}
-                width={270}
-                className={styles.infoImgRight}
-              />
             </div>
+          </div>
 
+          <div className='container'>
             <div className={styles.tile}>
               <img
                 src={photo3.src}
