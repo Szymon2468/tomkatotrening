@@ -3,8 +3,10 @@ import Image from 'next/image';
 import { useEffect } from 'react';
 import { useState } from 'react/cjs/react.development';
 import MasterLayout from '../src/components/MasterLayout/MasterLayout';
-import Nav from '../src/components/Nav/Nav';
 import styles from './index.module.scss';
+import photo3 from '../src/assets/homepage/photo3.webp';
+import { BsTelephoneFill } from 'react-icons/bs';
+import { IoMdMail } from 'react-icons/io';
 
 let inc = 1;
 let i = 0;
@@ -21,7 +23,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    setInterval(() => {
+    const interval = setInterval(() => {
       let displayText = '';
       if (j === textArray.length) {
         j = 0;
@@ -32,13 +34,13 @@ export default function Home() {
       }
       setTextToDisplay(displayText);
       inc++;
-      console.log(j, '===', textArray.length - 1);
 
       if (i === textArray[j].length && j <= textArray.length) {
         j++;
         inc = 1;
       }
     }, animationInterval);
+    return clearInterval(interval);
   }, []);
 
   return (
@@ -77,6 +79,50 @@ export default function Home() {
                   <h1 className={styles.animatedHeader}>{textToDisplay}</h1>
                 </div>
               </header>
+            </div>
+          </section>
+
+          <section>
+            <div className='container'>
+              <h2 className={styles.sectionHeader}>
+                ZRÓB DZISIAJ TO, CZEGO INNYM SIĘ NIE CHCE, A JUTRO MIEJ TO,
+                CZEGO INNI PRAGNĄ
+              </h2>
+              <div className={styles.contactContainer}>
+                <div className={styles.contact}>
+                  <BsTelephoneFill />
+                  <p>600 288 637</p>
+                </div>
+                <div className={styles.contact}>
+                  <IoMdMail />
+                  <p>tomkatotrening@wp.pl</p>
+                </div>
+              </div>
+              <div className={styles.tile}>
+                <div className={styles.infoImg}>
+                  <p>O MNIE</p>
+                </div>
+                <div className={styles.text}>
+                  <p>
+                    Obecnie w prowadzonych przeze mnie grupach trenuje blisko
+                    200 adeptów karate i kilkudziesięcioosobowa grupa miłośników
+                    fitness. Spośród zawodników karate wielu z nich regularnie
+                    startuje w turniejach osiągając sukcesy zarówno na arenie
+                    krajowej jak i międzynarodowej. Dotychczasowy dorobek
+                    sportowy moich wychowanków to blisko 600 pozycji medalowych
+                    wywalczonych na różnego rodzaju zawodach Oyama Karate rangi
+                    Mistrzostw Europy, Mistrzostw Polski, Pucharu Polski czy
+                    turniejach regionalnych
+                  </p>
+                  <div className={styles.btnContainer}>
+                    <button type='button' className={styles.readMoreBtn}>
+                      <span class={styles.transition}></span>
+                      <span class={styles.gradient}></span>
+                      <span class={styles.label}>Czytaj więcej...</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
         </main>
