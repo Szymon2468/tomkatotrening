@@ -3,7 +3,6 @@ import photo1 from '../../src/assets/homepage/photo1.webp';
 import photo2 from '../../src/assets/homepage/photo2.webp';
 import photo3 from '../../src/assets/homepage/photo3.webp';
 import MasterLayout from '../../src/components/MasterLayout/MasterLayout';
-
 import classNames from 'classnames';
 
 function About() {
@@ -26,7 +25,8 @@ function About() {
               Sensei Tomasz Mrowiec, 4 Dan Oyama Karate
             </h2>
             <div className={styles.belt}></div>
-            <div className={styles.tile}>
+
+            <div className={classNames(styles.tile, styles.firstTile)}>
               <img
                 src={photo1.src}
                 height={360}
@@ -41,6 +41,8 @@ function About() {
                   także zajęcia fitness.
                 </p>
                 <br />
+              </div>
+              <div className={styles.textList}>
                 <p>Wykształcenie i uprawnienia:</p>
                 <ul>
                   <li>Magister na kierunku Pedagogika,</li>
@@ -71,6 +73,9 @@ function About() {
                     stopień 4 Dan zdałem egzamin w 2021 roku.
                   </p>
                   <br />
+                </div>
+
+                <div className={styles.textList}>
                   <p>
                     Podczas krótkiej przygody w rywalizacji sportowej udało się
                     wywalczyć:
@@ -115,7 +120,7 @@ function About() {
           </div>
 
           <div className='container'>
-            <div className={styles.tile}>
+            <div className={classNames(styles.tile, styles.thirdTile)}>
               <img
                 src={photo3.src}
                 height={270}

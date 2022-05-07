@@ -1,6 +1,8 @@
 import styles from './Footer.module.scss';
 import logo from '../../assets/Logo.png';
 import Image from 'next/image';
+import Link from 'next/link';
+import classNames from 'classnames';
 
 function Footer() {
   return (
@@ -13,26 +15,70 @@ function Footer() {
 
           <div className={styles.contact}>
             <p>Tomasz Mrowiec</p>
-            <p>tel: 600 288 637</p>
-            <p>e-mail: tomkatotrening@wp.pl</p>
+            <a href='tel:600-288-637'>
+              <p>tel: 600 288 637</p>
+            </a>
+            <a href='mailto:tomkatotrening@wp.pl'>
+              <p>e-mail: tomkatotrening@wp.pl</p>
+            </a>
             <p>Facebook: Tomasz Mrowiec tomkatotrening</p>
           </div>
         </div>
 
         <div className={styles.footerSideMap}>
-          <p className={styles.bigFont}>O MNIE</p>
+          <Link href='/o-mnie'>
+            <p className={classNames(styles.bigFont, styles.hover)}>O MNIE</p>
+          </Link>
           <p className={styles.bigFont}>GRUPY</p>
-          <p className={styles.secColFirstItem}>Przedszkolna</p>
-          <p className={styles.secColSecItem}>Początkująca</p>
-          <p className={styles.secColThirdItem}>Średniozaawansowana</p>
-          <p className={styles.secColFourthItem}>Zawodnicza</p>
-          <p className={styles.secColFifthItem}>Fitness</p>
+          <Link href='/'>
+            <p className={classNames(styles.secColFirstItem, styles.hover)}>
+              Przedszkolna
+            </p>
+          </Link>
+          <Link href='/'>
+            <p className={classNames(styles.secColSecItem, styles.hover)}>
+              Początkująca
+            </p>
+          </Link>
+          <Link href='/'>
+            <p className={classNames(styles.secColThirdItem, styles.hover)}>
+              Średniozaawansowana
+            </p>
+          </Link>
+          <Link href='/'>
+            <p className={classNames(styles.secColFourthItem, styles.hover)}>
+              Zawodnicza
+            </p>
+          </Link>
+          <Link href='/'>
+            <p className={classNames(styles.secColFifthItem, styles.hover)}>
+              Fitness
+            </p>
+          </Link>
           <p className={styles.bigFont}>INFORMACJE</p>
-          <p className={styles.thirdColFirstItem}>Informacje</p>
-          <p className={styles.thirdColSecItem}>Śląski Klub Karate Goliat</p>
-          <p className={styles.thirdColThirdItem}>Oyama Karate</p>
-          <p className={styles.thirdColFourthItem}>Fitness</p>
-          <p className={styles.bigFont}>KONTAKT</p>
+          <Link href='/'>
+            <p className={classNames(styles.thirdColFirstItem, styles.hover)}>
+              Informacje
+            </p>
+          </Link>
+          <Link href='/'>
+            <p className={classNames(styles.thirdColSecItem, styles.hover)}>
+              Śląski Klub Karate Goliat
+            </p>
+          </Link>
+          <Link href='/'>
+            <p className={classNames(styles.thirdColThirdItem, styles.hover)}>
+              Oyama Karate
+            </p>
+          </Link>
+          <Link href='/'>
+            <p className={classNames(styles.thirdColFourthItem, styles.hover)}>
+              Fitness
+            </p>
+          </Link>
+          <Link href='/'>
+            <p className={classNames(styles.bigFont, styles.hover)}>KONTAKT</p>
+          </Link>
         </div>
       </div>
     </footer>

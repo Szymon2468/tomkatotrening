@@ -89,14 +89,20 @@ export default function Home() {
                 CZEGO INNI PRAGNĄ
               </h2>
               <div className={styles.contactContainer}>
-                <div className={styles.contact}>
-                  <BsTelephoneFill />
-                  <p>600 288 637</p>
-                </div>
-                <div className={styles.contact}>
-                  <IoMdMail />
-                  <p>tomkatotrening@wp.pl</p>
-                </div>
+                <span>
+                  <div className={styles.contact}>
+                    <BsTelephoneFill />
+                    <a href='tel:600-288-637'>
+                      <p>600 288 637</p>
+                    </a>
+                  </div>
+                  <div className={styles.contact}>
+                    <IoMdMail />
+                    <a href='mailto:tomkatotrening@wp.pl'>
+                      <p>tomkatotrening@wp.pl</p>
+                    </a>
+                  </div>
+                </span>
               </div>
               <div className={styles.homepageTile}>
                 <div className={styles.infoImg}>

@@ -22,6 +22,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    h1 {
+      @include media('<=tablet-portrait') {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      @include media('<=mobile') {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -37,31 +49,35 @@
 }
 
 .tile {
-  display: flex;
   width: 100%;
-  justify-content: space-between;
   margin: 50px 0;
 
   .infoImg {
     background-repeat: no-repeat;
     object-fit: cover;
     background-position: center;
-    margin-right: 50px;
     border-radius: 20px;
     border: $footerColor 3px solid;
+    grid-area: leftImg;
   }
 
   .infoImgRight {
     background-repeat: no-repeat;
     object-fit: cover;
     background-position: center;
-    margin-left: 50px;
     border-radius: 20px;
     border: #2e2e2e solid 3px;
+    grid-area: rightImg;
   }
 
   .text {
-    width: calc(100% - 240px);
+    // width: calc(100% - 240px);
+    width: 100%;
+    grid-area: text;
+  }
+
+  .textList {
+    grid-area: list;
 
     ul {
       list-style-type: '- ';
@@ -81,6 +97,83 @@
   height: fit-content;
 }
 
+.firstTile {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 270px calc(100% - 300px);
+  grid-template-areas:
+    'leftImg text'
+    'leftImg list';
+
+  @include media('<=tablet-landscape') {
+    ////////////pierwsze photo do gory !!!!!!!!!!!!!!!!!
+    margin-top: 0;
+    grid-template-areas:
+      'text text'
+      'leftImg list';
+  }
+
+  @include media('<=tablet-portrait') {
+    grid-template-columns: 240px calc(100% - 240px);
+  }
+
+  .infoImg {
+    @include media('<=tablet-portrait') {
+      width: 210px;
+      height: 280px;
+    }
+  }
+}
+
 .midTile {
   margin: 0;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: calc(100% - 300px) 270px;
+  grid-template-areas:
+    'text rightImg '
+    'list rightImg ';
+
+  @include media('<=tablet-landscape') {
+    margin-top: 0;
+    grid-template-areas:
+      'text text'
+      'list rightImg';
+  }
+
+  @include media('<=tablet-portrait') {
+    grid-template-areas:
+      'text rightImg'
+      'list list';
+    grid-template-columns: calc(100% - 240px) 240px;
+  }
+
+  .infoImgRight {
+    @include media('<=tablet-portrait') {
+      width: 210px;
+      height: 280px;
+    }
+  }
+}
+
+.thirdTile {
+  display: flex;
+
+  @include media('<=tablet-landscape') {
+    flex-direction: column-reverse;
+  }
+
+  .text {
+    margin-left: 30px;
+
+    @include media('<=tablet-landscape') {
+      margin: 0 0 30px 0;
+    }
+  }
+
+  img {
+    @include media('<=tablet-landscape') {
+      margin: 0 auto;
+    }
+  }
 }

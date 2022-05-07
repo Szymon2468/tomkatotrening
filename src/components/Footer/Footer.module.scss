@@ -107,3 +107,36 @@
     }
   }
 }
+
+.hover {
+  &,
+  &:after,
+  &:after,
+  &:before {
+    transition: all 0.3s;
+  }
+  &:hover {
+    color: $redColor;
+    cursor: pointer;
+  }
+
+  & {
+    position: relative;
+  }
+
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: $textColor;
+    height: 2px;
+  }
+  &:hover:after {
+    width: 100%;
+  }
+}

@@ -86,6 +86,11 @@
   margin-bottom: 100px;
   height: fit-content;
 
+  @include media('<=tablet-portrait') {
+    flex-direction: column;
+    gap: 30px;
+  }
+
   .infoImg {
     background-repeat: no-repeat;
     background-position: center;
@@ -93,7 +98,7 @@
     border-top-right-radius: 500px;
     border-bottom-right-radius: 500px;
     min-width: 540px;
-    height: 300;
+
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url('../src/assets/homepage/photo3.webp');
     background-size: cover;
@@ -101,6 +106,29 @@
     justify-content: center;
     align-items: center;
     border: 3px solid $footerColor;
+
+    @include media('<=tablet-landscape') {
+      min-width: 370px;
+    }
+
+    @include media('<=tablet-portrait') {
+      height: 180px;
+      min-width: 320px;
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 30%;
+      border-top-right-radius: 30%;
+      margin-right: 0;
+    }
+
+    @include media('<=big-mobile') {
+      min-width: 0;
+      width: 370px;
+      margin: 0 auto;
+    }
+
+    @include media('<=mobile') {
+      width: 300px;
+    }
 
     p {
       font-size: 32px;
@@ -113,9 +141,39 @@
   .text {
     width: calc(100% - 240px);
 
+    @include media('<=tablet-portrait') {
+      width: 100%;
+    }
+
+    @include media('<=big-mobile') {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     p {
       font-size: 18px;
       margin-bottom: 30px;
+
+      @include media('<=small-desktop') {
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      @include media('<=tablet-portrait') {
+        width: 100%;
+      }
+
+      @include media('<=big-mobile') {
+        width: 80%;
+      }
+
+      @include media('<=mobile') {
+        -webkit-line-clamp: 8;
+      }
     }
 
     ul {
@@ -133,6 +191,11 @@
       display: flex;
       justify-content: flex-end;
 
+      @include media('<=big-mobile') {
+        width: 80%;
+        justify-content: flex-end;
+      }
+
       .readMoreBtn {
         padding: 5px 40px;
         font-size: 18px;
@@ -149,6 +212,7 @@
         overflow: hidden;
         position: relative;
         transition: all linear 0.5s;
+        white-space: nowrap;
         // border: none;
 
         // .gradient {
@@ -208,6 +272,15 @@
   margin-top: 70px;
   margin-bottom: 30px;
   font-size: 26px;
+
+  @include media('<=big-mobile') {
+    font-size: 22px;
+  }
+
+  @include media('<=big-mobile') {
+    width: 80%;
+    margin: 70px auto 30px auto;
+  }
 }
 
 .contactContainer {
@@ -219,14 +292,43 @@
   justify-content: center;
   gap: 75px;
 
+  @include media('<=tablet-portrait') {
+    margin-bottom: 50px;
+  }
+
+  @include media('<=mobile') {
+    margin-bottom: 30px;
+  }
+
+  span {
+    display: flex;
+    justify-content: flex-start;
+    width: fit-content;
+    gap: 75px;
+
+    @include media('<=tablet-portrait') {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+  }
+
   .contact {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 
+    @include media('<=tablet-portrait') {
+      width: fit-content;
+    }
+
     p {
       font-size: 26px;
       margin-left: 20px;
+
+      @include media('<=big-mobile') {
+        font-size: 22px;
+      }
     }
 
     svg {
