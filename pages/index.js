@@ -40,7 +40,7 @@ export default function Home() {
         inc = 1;
       }
     }, animationInterval);
-    return clearInterval(interval);
+    // return clearInterval(interval);
   }, []);
 
   return (

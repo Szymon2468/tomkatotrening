@@ -20,6 +20,21 @@ function Nav({ isNavBackgroundTransparent }) {
     'Fitness'
   ];
 
+  const groupPaths = [
+    'grupy/grupa-przedszkolna',
+    'grupy/grupa-poczatkujaca',
+    'grupy/grupa-sredniozaawansowana',
+    'grupy/grupa-zawodnicza',
+    'grupy/grupa-fitness'
+  ];
+
+  const infoPaths = [
+    'informacje/informacje',
+    'informacje/Slaski-Klub-Karate-Goliat',
+    'informacje/Oyama-Karate',
+    'informacje/fitness'
+  ];
+
   const infoOptions = [
     'Informacje',
     'Śląski Klub Karate Goliat',
@@ -55,11 +70,19 @@ function Nav({ isNavBackgroundTransparent }) {
             </div>
 
             <div className={styles.linkContainer}>
-              <Dropdown title={'GRUPY'} options={groupOptions} />
+              <Dropdown
+                title={'GRUPY'}
+                options={groupOptions}
+                paths={groupPaths}
+              />
             </div>
 
             <div className={styles.linkContainer}>
-              <Dropdown title={'INFORMACJE'} options={infoOptions} />
+              <Dropdown
+                title={'INFORMACJE'}
+                options={infoOptions}
+                paths={infoPaths}
+              />
             </div>
 
             <div className={styles.linkContainer}>

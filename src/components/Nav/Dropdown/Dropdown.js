@@ -1,8 +1,9 @@
 import classNames from 'classnames';
+import Link from 'next/link';
 import { useState } from 'react';
 import styles from './Dropdown.module.scss';
 
-function Dropdown({ options, title }) {
+function Dropdown({ options, title, paths }) {
   const [selected, setSelected] = useState(-1);
   const [active, setActive] = useState(false);
 
@@ -23,15 +24,17 @@ function Dropdown({ options, title }) {
 
     options.map((option, i) => {
       result.push(
-        <li
-          onClick={(evt) => handleClick(i)}
-          key={i}
-          className={`
+        <Link href={`/${paths[i]}`}>
+          <li
+            onClick={(evt) => handleClick(i)}
+            key={i}
+            className={`
             ${styles.dropdownListItem}
             ${i === selected ? styles.dropdownListItemActive : ''}`}
-        >
-          <p className='smaller'>{option}</p>
-        </li>
+          >
+            <p className='smaller'>{option}</p>
+          </li>
+        </Link>
       );
     });
 

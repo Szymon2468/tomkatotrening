@@ -81,6 +81,7 @@
 
     ul {
       list-style-type: '- ';
+      padding-left: 20px;
 
       li {
         color: $textColor;
@@ -106,7 +107,6 @@
     'leftImg list';
 
   @include media('<=tablet-landscape') {
-    ////////////pierwsze photo do gory !!!!!!!!!!!!!!!!!
     margin-top: 0;
     grid-template-areas:
       'text text'
@@ -114,7 +114,19 @@
   }
 
   @include media('<=tablet-portrait') {
-    grid-template-columns: 240px calc(100% - 240px);
+    grid-template-columns: 210px calc(100% - 240px);
+    grid-template-areas:
+      'leftImg text'
+      'list list';
+  }
+
+  @include media('<=big-mobile') {
+    grid-template-columns: 100%;
+    gap: 10px;
+    grid-template-areas:
+      'text'
+      'leftImg'
+      'list';
   }
 
   .infoImg {
@@ -122,6 +134,16 @@
       width: 210px;
       height: 280px;
     }
+
+    @include media('<=big-mobile') {
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+
+  .text {
+    margin-bottom: -10px;
+    height: fit-content;
   }
 }
 
@@ -145,7 +167,16 @@
     grid-template-areas:
       'text rightImg'
       'list list';
-    grid-template-columns: calc(100% - 240px) 240px;
+    grid-template-columns: calc(100% - 240px) 210px;
+  }
+
+  @include media('<=big-mobile') {
+    grid-template-areas:
+      'text'
+      'rightImg'
+      'list';
+    grid-template-columns: 100%;
+    gap: 10px;
   }
 
   .infoImgRight {
@@ -153,6 +184,16 @@
       width: 210px;
       height: 280px;
     }
+
+    @include media('<=big-mobile') {
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+
+  .text {
+    margin-bottom: -10px;
+    height: fit-content;
   }
 }
 
@@ -174,6 +215,11 @@
   img {
     @include media('<=tablet-landscape') {
       margin: 0 auto;
+    }
+
+    @include media('<=big-mobile') {
+      width: 300px;
+      height: 170px;
     }
   }
 }
