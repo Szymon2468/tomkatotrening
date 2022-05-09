@@ -1,6 +1,7 @@
 import React from 'react';
 import GeneralAboutPage from '../../../src/components/GeneralAboutPage/GeneralAboutPage';
 import img from '../../../src/assets/groups/fighters_group_image.webp';
+import styles from './index.module.scss';
 
 const text = (
   <>
@@ -12,9 +13,9 @@ const text = (
       worki i tarcze treningowe, łapy bokserskie, liny, trx, skakanki, różnego
       rodzaju piłki, hantelki, itp.
     </p>
-
+    <br />
     <p>Treningi prowadzę na podstawie autorskiego programu treningowego.</p>
-
+    <br />
     <p>Zakres tematyczny zajęć:</p>
     <ul>
       <li>
@@ -36,9 +37,9 @@ const text = (
         kasków.
       </li>
     </ul>
-
+    <br />
     <p>Korzyści płynące z treningu w tej grupie:</p>
-    <ul>
+    <ul className={styles.zeroMargin}>
       <li>poznanie technik Karate Oyama,</li>
       <li>wzmocnienie różnych grup mięśni,</li>
       <li>

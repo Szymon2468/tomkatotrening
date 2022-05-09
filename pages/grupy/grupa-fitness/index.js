@@ -1,6 +1,7 @@
 import React from 'react';
 import GeneralAboutPage from '../../../src/components/GeneralAboutPage/GeneralAboutPage';
 import img from '../../../src/assets/groups/fitness_group_image.webp';
+import styles from './index.module.scss';
 
 const text = (
   <>
@@ -16,34 +17,40 @@ const text = (
       udziału w treningu jest dobry stan zdrowia i brak przeciwskazań do udziału
       w takiej formie treningowej.
     </p>
-
-    <p>Przebieg treningu:</p>
-    <ul>
-      <li>wprowadzenie - omówienie i prezentacja wybranych ćwiczeń,</li>
-      <li>
-        rozgrzewka, która jest bardzo ważną oraz integralną częścią treningu,{' '}
-      </li>
-      <li>
-        część zasadnicza, którą stanowią zestawy odpowiednio dobranych ćwiczeń,
-      </li>
-      <li>rozciąganie i rozluźnienie.</li>
-    </ul>
-
-    <p>Korzyści płynące z udziału w treningu:</p>
-    <ul>
-      <li>odstresowanie się i lepsze samopoczucie, </li>
-      <li>
-        wysoka skuteczność eliminacji nadmiaru tkanki tłuszczowej bez
-        jednoczesnej redukcji tkanki mięśniowej,
-      </li>
-      <li>wzmocnienie rożnych grup mięśni,</li>
-      <li>budowanie i rozwijanie wytrzymałości, szybkości i siły, </li>
-      <li>
-        poprawa ogólnej kondycji, koordynacji ruchowej, skoczności, a także
-        gibkości.
-      </li>
-    </ul>
-
+    <br />
+    <span>
+      <p>Przebieg treningu:</p>
+      <ul className={styles.firstUl}>
+        <li>wprowadzenie - omówienie i prezentacja wybranych ćwiczeń,</li>
+        <li>
+          rozgrzewka, która jest bardzo ważną oraz integralną częścią treningu,{' '}
+        </li>
+        <li>
+          część zasadnicza, którą stanowią zestawy odpowiednio dobranych
+          ćwiczeń,
+        </li>
+        <li>rozciąganie i rozluźnienie.</li>
+      </ul>
+    </span>
+    <br />
+    <br />
+    <span>
+      <p className={styles.pMargin}>Korzyści płynące z udziału w treningu:</p>
+      <ul>
+        <li>odstresowanie się i lepsze samopoczucie, </li>
+        <li>
+          wysoka skuteczność eliminacji nadmiaru tkanki tłuszczowej bez
+          jednoczesnej redukcji tkanki mięśniowej,
+        </li>
+        <li>wzmocnienie rożnych grup mięśni,</li>
+        <li>budowanie i rozwijanie wytrzymałości, szybkości i siły, </li>
+        <li>
+          poprawa ogólnej kondycji, koordynacji ruchowej, skoczności, a także
+          gibkości.
+        </li>
+      </ul>
+    </span>
+    <br />
     <p>Sala wyposażona jest w maty fitness.</p>
   </>
 );

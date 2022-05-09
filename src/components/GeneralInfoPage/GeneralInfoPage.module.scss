@@ -24,25 +24,3 @@
     white-space: nowrap;
   }
 }
-
-.content {
-  margin-bottom: 50px;
-
-  img {
-    width: 300px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 20px;
-    border: 3px solid $footerColor;
-    float: left;
-    margin-right: 50px;
-    margin-bottom: 30px;
-  }
-
-  .text {
-    width: fit-content;
-    ul {
-      color: $textColor;
-    }
-  }
-}

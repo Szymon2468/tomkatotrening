@@ -4,6 +4,10 @@
 @import 'bootstrap-css-only/css/bootstrap.min.css';
 @import './variables.scss';
 
+section {
+  height: fit-content;
+}
+
 /* Box sizing rules */
 *,
 *::before,

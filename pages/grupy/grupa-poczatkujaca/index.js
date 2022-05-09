@@ -10,13 +10,13 @@ const text = (
       poznawanie tajników Karate Oyama. Przygodę z karate w tych grupach mogą
       rozpocząć dzieci do 14 roku życia.
     </p>
-
+    <br />
     <p>
       Zajęcia prowadzę na podstawie systemu szkolenia Oyama Karate, a także w
       oparciu o swoje kilkunastoletnie doświadczenie jako instruktora karate,
       zawodnika i pedagoga.
     </p>
-
+    <br />
     <p>
       Tematyka zajęć i korzyści płynące z trenowania Karate Oyama: - nauka
       podstawowych technik (Kihon) i pierwszych układów (Kata), - ćwiczenia
@@ -26,12 +26,12 @@ const text = (
       dbanie o porządek, - kształcenie w dzieciach pewności siebie,
       stanowczości, umiejętności dążenia do celu, spokoju i koncentracji.
     </p>
-
+    <br />
     <p>
       Korzystamy z różnego rodzaju sprzętu sportowego tj. worków i tarcz
       treningowych, materacy, piłek, skakanek, lin, trx, ławeczek itp.
     </p>
-
+    <br />
     <p>
       Potwierdzeniem nabytych umiejętności przez adeptów karate jest pomyślne
       zdanie egzaminów na stopnie Kyu.

@@ -9,13 +9,13 @@ const text = (
       osobowe grupy dzieci w przedziale wiekowym 8 - 14 lat, które mają już za
       sobą przynajmniej dwa lata treningu.
     </p>
-
+    <br />
     <p>
       Zajęcia prowadzę na podstawie systemu szkolenia Oyama Karate, a także w
       oparciu o swoje kilkunastoletnie doświadczenie jako instruktora karate,
       zawodnika i pedagoga.
     </p>
-
+    <br />
     <p>Tematyka zajęć i korzyści płynące z trenowania Karate Oyama:</p>
     <ul>
       <li>
@@ -34,7 +34,7 @@ const text = (
         hantelki, skakanki, itp.).
       </li>
     </ul>
-
+    <br />
     <p>
       Nabytą wiedzę i wyćwiczone umiejętności dzieci potwierdzają na egzaminach
       na stopnie Kyu, jak również biorąc udział w rywalizacji sportowej,

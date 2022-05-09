@@ -5,11 +5,12 @@ import img from '../../../src/assets/groups/preschoolers_group_image.webp';
 const text = (
   <>
     <p>Grupę tworzą dzieci w wieku przedszkolnym (4 – 6 lat). </p>
+    <br />
     <p>
       Zajęcia to ćwiczenia ogólnorozwojowe z elementami Karate Oyama prowadzone
       w miłej atmosferze :-)
     </p>
-
+    <br />
     <p>Tematyka zajęć i korzyści płynące z trenowania Karate Oyama:</p>
     <ul>
       <li>nauka podstawowych technik Karate Oyama,</li>

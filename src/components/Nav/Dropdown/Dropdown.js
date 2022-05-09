@@ -1,11 +1,14 @@
 import classNames from 'classnames';
 import Link from 'next/link';
 import { useState } from 'react';
+import { useEffect } from 'react/cjs/react.development';
 import styles from './Dropdown.module.scss';
 
-function Dropdown({ options, title, paths }) {
+function Dropdown({ options, title, paths, isNavTransparent }) {
   const [selected, setSelected] = useState(-1);
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(true);
+
+  useEffect(() => {}, [active]);
 
   const toggleDropdown = () => {
     setActive(!active);
@@ -43,7 +46,13 @@ function Dropdown({ options, title, paths }) {
 
   return (
     <>
-      <div className={styles.dropdown} onMouseLeave={() => setActive(false)}>
+      <div
+        className={classNames(
+          styles.dropdown,
+          !isNavTransparent && styles.dropdownNonRelative
+        )}
+        onMouseLeave={() => setActive(false)}
+      >
         <div
           onMouseEnter={() => setActive(true)}
           className={classNames(
@@ -55,11 +64,14 @@ function Dropdown({ options, title, paths }) {
           <i className={'fa fa-angle-down'} aria-hidden='true'></i>
         </div>
         <ul
-          className={`${styles.dropdownList} ${
-            active && styles.dropdownListActive
-          }`}
+          className={classNames(
+            !isNavTransparent && styles.dropdownTransparentList,
+            !isNavTransparent && active && styles.dropdownTransparentListActive,
+            isNavTransparent && styles.dropdownList,
+            isNavTransparent && active && styles.dropdownListActive
+          )}
         >
-          {renderOptions()}
+          <div className='container'>{renderOptions()}</div>
         </ul>
       </div>
       )

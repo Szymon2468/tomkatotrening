@@ -74,6 +74,7 @@ function Nav({ isNavBackgroundTransparent }) {
                 title={'GRUPY'}
                 options={groupOptions}
                 paths={groupPaths}
+                isNavTransparent={isNavBackgroundTransparent}
               />
             </div>
 
@@ -82,6 +83,7 @@ function Nav({ isNavBackgroundTransparent }) {
                 title={'INFORMACJE'}
                 options={infoOptions}
                 paths={infoPaths}
+                isNavTransparent={isNavBackgroundTransparent}
               />
             </div>
 
