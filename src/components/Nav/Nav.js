@@ -29,14 +29,14 @@ function Nav({ isNavBackgroundTransparent }) {
   ];
 
   const infoPaths = [
-    'informacje/informacje',
+    'informacje/harmonogram',
     'informacje/Slaski-Klub-Karate-Goliat',
     'informacje/Oyama-Karate',
     'informacje/fitness'
   ];
 
   const infoOptions = [
-    'Informacje',
+    'Harmonogram',
     'Śląski Klub Karate Goliat',
     'Oyama Karate',
     'Fitness'

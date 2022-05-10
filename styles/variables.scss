@@ -3,9 +3,10 @@
 
 $redColor: #db4339;
 $darkGreyColor: #201f1e;
-$lightGreyColor: #3f3f3f;
+$lightGreyColor: #333333;
 $textColor: #fff4f0;
 $footerColor: rgb(26, 24, 24);
+$tableBorder: 1px solid $footerColor;
 
 @mixin flexCenter($direction) {
   display: flex;

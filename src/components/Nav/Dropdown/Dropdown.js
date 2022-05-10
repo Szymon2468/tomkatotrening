@@ -6,7 +6,7 @@ import styles from './Dropdown.module.scss';
 
 function Dropdown({ options, title, paths, isNavTransparent }) {
   const [selected, setSelected] = useState(-1);
-  const [active, setActive] = useState(true);
+  const [active, setActive] = useState(false);
 
   useEffect(() => {}, [active]);
 
@@ -74,7 +74,6 @@ function Dropdown({ options, title, paths, isNavTransparent }) {
           <div className='container'>{renderOptions()}</div>
         </ul>
       </div>
-      )
     </>
   );
 }

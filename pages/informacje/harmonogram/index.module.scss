@@ -1,0 +1,65 @@
+@import '../../../styles/variables.scss';
+
+.table {
+  color: $textColor;
+  background-color: $lightGreyColor;
+  margin-bottom: 50px;
+
+  @include media('<=big-mobile') {
+    margin: 0 auto;
+  }
+
+  .tableHeader {
+    width: 100%;
+
+    .headerCell {
+      padding: 20px 30px;
+      background-color: $redColor;
+      color: $textColor;
+      border-left: $tableBorder;
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+
+  .tableBody {
+    .row {
+      .hour {
+        padding: 20px 30px;
+        border-top: $tableBorder;
+        border-right: $tableBorder;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      .cell {
+        padding: 10px;
+        border-top: $tableBorder;
+        border-right: $tableBorder;
+      }
+    }
+  }
+}
+
+.trainingContainer {
+  .groupName {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .city,
+  .address,
+  .link {
+    font-size: 16px;
+    margin-top: 3px;
+    font-weight: 400;
+  }
+
+  .link {
+    text-decoration: underline;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
