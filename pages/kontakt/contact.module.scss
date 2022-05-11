@@ -1,1 +1,194 @@
 @import '../../styles/variables.scss';
+
+@keyframes rotationAnimation {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  25% {
+    transform: rotateZ(-5deg);
+  }
+
+  50% {
+    transform: rotateZ(10deg);
+  }
+
+  75% {
+    transform: rotateZ(-10deg);
+  }
+
+  100% {
+    transform: rotateZ(5deg);
+  }
+}
+
+.section {
+  height: 579px;
+
+  @include media('<=big-mobile') {
+    height: calc(50vh - 100px);
+  }
+}
+
+.landingPage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 679px;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url('../../src/assets/contact/contact_image.webp');
+  object-fit: cover;
+  object-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+
+  @include media('<=big-mobile') {
+    height: 50vh;
+  }
+
+  header {
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+.topText {
+  padding: 350px 0 0 150px;
+  z-index: 1e5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  white-space: nowrap;
+  width: fit-content;
+
+  z-index: 10;
+
+  @include media('<=big-mobile') {
+    white-space: initial;
+  }
+
+  @include media('<=small-desktop') {
+    padding: 350px 0 0 60px;
+  }
+
+  @include media('<=tablet-landscape') {
+    padding: 300px 0 0 60px;
+  }
+
+  @include media('<=tablet-portrait') {
+    padding: 300px 0 0 30px;
+  }
+
+  @include media('<=big-mobile') {
+    padding: 150px 0 0 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+
+    h1,
+    h2,
+    p {
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      color: $redColor;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.contactHeader {
+  color: $redColor;
+  width: 90%;
+  text-align: center;
+  font-size: 26px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin: 40px auto 70px auto;
+  width: 100%;
+  justify-content: center;
+  gap: 75px;
+
+  @include media('<=tablet-portrait') {
+    margin-bottom: 50px;
+  }
+
+  @include media('<=mobile') {
+    margin-bottom: 30px;
+  }
+
+  span {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: fit-content;
+    gap: 20px;
+
+    @include media('<=tablet-portrait') {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+
+    @include media('<=tablet-portrait') {
+      width: fit-content;
+    }
+
+    p {
+      font-size: 26px;
+      margin-left: 30px;
+      -webkit-transition: 0.2s ease-out;
+      -moz-transition: 0.2s ease-out;
+      transition: 0.2s ease-out;
+
+      @include media('<=big-mobile') {
+        width: 260px;
+        height: auto;
+      }
+
+      @include media('<=mobile') {
+        margin-left: 15px;
+      }
+    }
+
+    @include media('<=big-mobile') {
+      font-size: 22px;
+    }
+
+    &:hover {
+      .svg {
+        animation: rotationAnimation 0.6s;
+        animation-iteration-count: 2;
+        cursor: pointer;
+      }
+
+      p {
+        color: $redColor;
+      }
+    }
+
+    .svg {
+      fill: $redColor;
+      width: 40px;
+      height: 40px;
+      -webkit-transition: 0.6s ease-out;
+      -moz-transition: 0.6s ease-out;
+      transition: 0.6s ease-out;
+    }
+  }
+}
