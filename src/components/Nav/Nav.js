@@ -88,7 +88,7 @@ function Nav({ isNavBackgroundTransparent }) {
             </div>
 
             <div className={styles.linkContainer}>
-              <Link href='/'>
+              <Link href='/kontakt'>
                 <p className={styles.link}>KONTAKT</p>
               </Link>
             </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import GeneralAboutPage from '../../../src/components/GeneralAboutPage/GeneralAboutPage';
 import img from '../../../src/assets/groups/preschoolers_group_image.webp';
+import styles from './index.module.scss';
 
 const text = (
   <>
@@ -12,7 +13,7 @@ const text = (
     </p>
     <br />
     <p>Tematyka zajęć i korzyści płynące z trenowania Karate Oyama:</p>
-    <ul>
+    <ul className={styles.firstUl}>
       <li>nauka podstawowych technik Karate Oyama,</li>
       <li> ćwiczenia poprawiające ogólną sprawność fizyczną,</li>
       <li>zabawy ruchowe, integrujące i rozwijające różne cechy motoryczne,</li>

@@ -44,23 +44,25 @@ function HamburgerMenu({ logoClicked }) {
             }
           >
             <div className={styles.navItem} onClick={onNavClick}>
-              <Link href={'/'}>Przedszkolna</Link>
+              <Link href={'/grupy/grupa-przedszkolna'}>Przedszkolna</Link>
             </div>
 
             <div className={styles.navItem} onClick={onNavClick}>
-              <Link href={'/'}>Początkująca</Link>
+              <Link href={'/grupy/grupa-poczatkujaca'}>Początkująca</Link>
             </div>
 
             <div className={styles.navItem} onClick={onNavClick}>
-              <Link href={'/'}>Średniozaawansowana</Link>
+              <Link href={'/grupy/grupa-sredniozaawansowana'}>
+                Średniozaawansowana
+              </Link>
             </div>
 
             <div className={styles.navItem} onClick={onNavClick}>
-              <Link href={'/'}>Zawodnicza</Link>
+              <Link href={'/grupy/grupa-zawodnicza'}>Zawodnicza</Link>
             </div>
 
             <div className={styles.navItem} onClick={onNavClick}>
-              <Link href={'/'}>Fitness</Link>
+              <Link href={'/grupy/grupa-fitness'}>Fitness</Link>
             </div>
           </Collapsible>
 
@@ -74,24 +76,26 @@ function HamburgerMenu({ logoClicked }) {
             }
           >
             <div className={styles.navItem} onClick={onNavClick}>
-              <Link href={'/'}>Informacje</Link>
+              <Link href={'/informacje/harmonogram'}>Harmonogram</Link>
             </div>
 
             <div className={styles.navItem} onClick={onNavClick}>
-              <Link href={'/'}>Śląski Klub Karate Goliat</Link>
+              <Link href={'/informacje/Slaski-Klub-Karate-Goliat'}>
+                Śląski Klub Karate Goliat
+              </Link>
             </div>
 
             <div className={styles.navItem} onClick={onNavClick}>
-              <Link href={'/'}>Oyama Karate</Link>
+              <Link href={'/informacje/Oyama-Karate'}>Oyama Karate</Link>
             </div>
 
             <div className={styles.navItem} onClick={onNavClick}>
-              <Link href={'/'}>Fitness</Link>
+              <Link href={'/informacje/fitness'}>Fitness</Link>
             </div>
           </Collapsible>
 
           <div className={styles.navItem} onClick={onNavClick}>
-            <Link href='/'>KONTAKT</Link>
+            <Link href='/kontakt'>KONTAKT</Link>
           </div>
         </div>
       )}

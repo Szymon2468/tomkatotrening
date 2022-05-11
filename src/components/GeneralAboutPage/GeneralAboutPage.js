@@ -1,7 +1,7 @@
 import MasterLayout from '../MasterLayout/MasterLayout';
 import styles from './GeneralAboutPage.module.scss';
 
-function GeneralAboutPage({ name, imgSrc, imgAlt, text }) {
+function GeneralAboutPage({ name, imgSrc, imgAlt, text, isImgLast }) {
   return (
     <MasterLayout isNavBackgroundTransparent={false}>
       <main>
@@ -14,9 +14,10 @@ function GeneralAboutPage({ name, imgSrc, imgAlt, text }) {
 
           <main className='container'>
             <div className={styles.content}>
-              <img src={imgSrc.src} alt={imgAlt} />
+              {!isImgLast && <img src={imgSrc.src} alt={imgAlt} />}
               <div className={styles.text}>{text}</div>
               <div style={{ clear: 'left' }}></div>
+              {isImgLast && <img src={imgSrc.src} alt={imgAlt} />}
             </div>
           </main>
         </section>
