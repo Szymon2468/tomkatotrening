@@ -37,6 +37,9 @@ function index() {
       imgSrc={img}
       imgAlt={''}
       text={text}
+      imgClass={styles.img}
+      textClass={styles.text}
+      contentClass={styles.content}
     />
   );
 }

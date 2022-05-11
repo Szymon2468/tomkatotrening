@@ -97,9 +97,9 @@ function index() {
               {days.map((day, index) => (
                 <>
                   <th className={styles.headerCell} key={uuid()}>
-                    {day}
-                    {index === days.length - 1 ? (
-                      windowSize.width <= 1440 && (
+                    {index === days.length - 1 && windowSize.width <= 1440 ? (
+                      <div className={styles.arrowContainer}>
+                        {day}
                         <MdArrowRight
                           className={classNames(
                             styles.arrow,
@@ -107,9 +107,9 @@ function index() {
                           )}
                           onClick={() => handleRightArrowClick()}
                         />
-                      )
+                      </div>
                     ) : (
-                      <></>
+                      <span>{day}</span>
                     )}
                   </th>
                 </>

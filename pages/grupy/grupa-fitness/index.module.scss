@@ -3,4 +3,41 @@
 .firstUl {
   width: calc(100% - 350px);
   margin: 0 0 0 auto;
+
+  @include media('<=tablet-landscape') {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.secondUl {
+  @include media('<=small-desktop') {
+    width: calc(100% - 350px);
+    margin: 0 0 0 auto;
+  }
+
+  @include media('<=tablet-landscape') {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.content {
+  @include media('<=tablet-portrait') {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .img {
+    @include media('<=tablet-landscape') {
+      margin: 0 !important;
+
+      margin-right: 20px !important;
+    }
+
+    @include media('<=tablet-portrait') {
+      margin: 30px auto 0 auto !important;
+    }
+  }
 }

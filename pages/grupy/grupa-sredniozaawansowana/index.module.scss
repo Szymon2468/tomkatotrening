@@ -1,1 +1,36 @@
 @import '../../../styles/variables.scss';
+
+.firstUl {
+  width: calc(100% - 350px);
+  margin: 0 0 0 auto;
+
+  @include media('<=tablet-landscape') {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.header {
+  @include media('<=mobile') {
+    font-size: 20px;
+  }
+}
+
+.content {
+  @include media('<=tablet-portrait') {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .img {
+    @include media('<=small-desktop') {
+      margin-right: 20px !important;
+      margin-bottom: 20px !important;
+    }
+
+    @include media('<=tablet-portrait') {
+      margin-top: 30px;
+    }
+  }
+}

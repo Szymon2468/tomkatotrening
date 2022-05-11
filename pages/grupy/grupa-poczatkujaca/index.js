@@ -1,6 +1,7 @@
 import React from 'react';
 import GeneralAboutPage from '../../../src/components/GeneralAboutPage/GeneralAboutPage';
 import img from '../../../src/assets/groups/begginers_group_image.webp';
+import styles from './index.module.scss';
 
 const text = (
   <>
@@ -46,6 +47,9 @@ function index() {
       imgSrc={img}
       imgAlt={''}
       text={text}
+      imgClass={styles.img}
+      textClass={styles.text}
+      contentClass={styles.content}
     />
   );
 }

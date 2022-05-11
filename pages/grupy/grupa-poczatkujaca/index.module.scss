@@ -1,1 +1,19 @@
 @import '../../../styles/variables.scss';
+
+.content {
+  @include media('<=big-mobile') {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .img {
+    @include media('<=tablet-portrait') {
+      margin-right: 20px !important;
+    }
+
+    @include media('<=big-mobile') {
+      margin-top: 30px;
+    }
+  }
+}
