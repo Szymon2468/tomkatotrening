@@ -1,7 +1,54 @@
 @import '../../../styles/variables.scss';
 
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-areas:
+    'img text linkImg'
+    'info info linkImg';
+
+  @include media('<=desktop') {
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas:
+      'img text text'
+      'info info linkImg';
+  }
+
+  @include media('<=tablet-landscape') {
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas:
+      'linkImg text text'
+      ' info info img';
+  }
+
+  @include media('<=tablet-portrait') {
+    grid-template-columns: repeat(5, auto);
+    grid-template-areas:
+      'text text text text text'
+      'img img img img img'
+      'info info info linkImg linkImg';
+  }
+
+  @include media('<=big-mobile') {
+    grid-template-columns: repeat(1, auto);
+    grid-template-areas:
+      'text '
+      'img '
+      'info ';
+  }
+}
+
 .text {
+  grid-area: text;
+
+  ul {
+    color: $textColor;
+  }
+}
+
+.info {
   margin-bottom: 50px;
+  grid-area: info;
 
   ul {
     color: $textColor;
@@ -9,14 +56,55 @@
 }
 
 .img {
-  // width: 300px;
-  // height: 400px;
+  grid-area: img;
+  width: 330px;
+  height: 440px;
   object-fit: cover;
   border-radius: 20px;
   border: 3px solid $footerColor;
   margin-right: 50px;
   margin-bottom: 30px;
+
+  @include media('<=tablet-landscape') {
+    margin: 0 0 0 30px;
+  }
+
+  @include media('<=tablet-portrait') {
+    height: 320px;
+    width: 240px;
+    margin: 30px auto;
+  }
 }
 
 .linkImg {
+  grid-area: linkImg;
+  height: 550px;
+  width: 170px;
+  margin-left: 30px;
+
+  @include media('<=tablet-landscape') {
+    margin: 0 30px 0 0;
+  }
+
+  @include media('<=tablet-portrait') {
+    margin: 0 0 0 20px;
+  }
+
+  @include media('<=big-mobile') {
+    display: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.link {
+  text-decoration: underline;
+  transition: all linear 0.2s;
+
+  &:hover {
+    text-decoration: underline;
+    color: $redColor;
+  }
 }

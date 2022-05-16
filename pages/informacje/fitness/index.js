@@ -2,29 +2,34 @@ import React from 'react';
 import GeneraslInfoPage from '../../../src/components/GeneralInfoPage/GeneraslInfoPage';
 import img from '../../../src/assets/information/fitness_info_image.webp';
 import styles from './index.module.scss';
+import classNames from 'classnames';
 
 function index() {
   return (
     <GeneraslInfoPage name={'FITNESS'}>
       <div className='container'>
-        <img src={img.src} alt='' className={styles.img} />
-        <div className={styles.text}>
-          <p>
-            Fitness to styl życia przejawiający się troską o szeroko pojmowane
-            zdrowie i sprawność fizyczną. W takim stylu życia niewątpliwie
-            istotną rolę odgrywa świadoma i systematyczna aktywność fizyczna,
-            która może być realizowana pod postacią różnego rodzaju ćwiczeń. Aby
-            zwiększyć efektywność naszych działań w dbałości o zdrowie i
-            sprawność fizyczną istotne jest aby dobrać właściwą formę aktywności
-            fizycznej, na której opiera się trening fitness, do naszych potrzeb.
-          </p>
-          <br />
-          <p>
-            Proponowane formy zajęć fitness realizowane przeze mnie to treningi
-            o charakterze interwałowym, obwodowym, funkcjonalnym, wzmacniającym
-            i rozciągającym.
-          </p>
-          <br />
+        <div className={styles.textAndImgContainer}>
+          <img src={img.src} alt='' className={styles.img} />
+          <div className={styles.text}>
+            <p>
+              Fitness to styl życia przejawiający się troską o szeroko pojmowane
+              zdrowie i sprawność fizyczną. W takim stylu życia niewątpliwie
+              istotną rolę odgrywa świadoma i systematyczna aktywność fizyczna,
+              która może być realizowana pod postacią różnego rodzaju ćwiczeń.
+              Aby zwiększyć efektywność naszych działań w dbałości o zdrowie i
+              sprawność fizyczną istotne jest aby dobrać właściwą formę
+              aktywności fizycznej, na której opiera się trening fitness, do
+              naszych potrzeb.
+            </p>
+            <br />
+            <p>
+              Proponowane formy zajęć fitness realizowane przeze mnie to
+              treningi o charakterze interwałowym, obwodowym, funkcjonalnym,
+              wzmacniającym i rozciągającym.
+            </p>
+          </div>
+        </div>
+        <div className={classNames(styles.text, styles.secText)}>
           <span>
             <p>Główne zalety treningu fitness:</p>
             <ul>

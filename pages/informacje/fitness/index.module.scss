@@ -3,17 +3,57 @@
 .text {
   margin-bottom: 50px;
 
+  @include media('<=tablet-landscape') {
+    margin-bottom: 30px;
+  }
+
   ul {
     color: $textColor;
   }
 }
 
+.textAndImgContainer {
+  display: flex;
+
+  @include media('<=tablet-landscape') {
+    flex-direction: column-reverse;
+  }
+}
+
+.secText {
+  @include media('<=desktop') {
+    margin-top: -85px;
+  }
+
+  @include media('<=small-desktop') {
+    margin-top: -160px;
+  }
+
+  @include media('<=tablet-landscape') {
+    margin-top: 0;
+  }
+}
+
 .img {
-  // width: 300px;
-  // height: 400px;
+  width: 480px;
+  height: 270px;
   object-fit: cover;
   border-radius: 20px;
   border: 3px solid $footerColor;
   margin-right: 50px;
   margin-bottom: 30px;
+
+  @include media('<=tablet-landscape') {
+    margin: 0 auto 30px auto;
+  }
+
+  @include media('<=big-mobile') {
+    width: 400px;
+    height: 225px;
+  }
+
+  @include media('<=mobile') {
+    width: 300px;
+    height: 170px;
+  }
 }

@@ -268,7 +268,7 @@
   color: $redColor;
   text-align: center;
   margin-top: 70px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-size: 26px;
 
   @include media('<=big-mobile') {
@@ -337,21 +337,144 @@
   }
 }
 
-// .animatedHeader {
-//   position: relative;
+.groupCardsContainer {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  flex-wrap: wrap;
 
-//   &::after,
-//   &::before {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     bottom: 0;
-//     right: 0;
-//   }
+  .groupCard {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
 
-//   &::before {
-//     background: blue;
-//     animation: typewriter 3s steps(15) forwards infinite;
-//   }
-// }
+    &:hover {
+      .groupCardInner {
+        transform: rotateY(180deg);
+      }
+    }
+
+    .groupCardInner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      border-radius: 20px;
+      border: 3px solid $footerColor;
+
+      .groupCardFront,
+      .groupCardBack {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        padding: 20px 10px 10px 10px;
+
+        h3 {
+          color: $redColor;
+          z-index: 10;
+          margin-bottom: 20px;
+        }
+      }
+
+      .groupCardFront {
+        background-color: #bbb;
+        color: black;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('../src/assets/homepage/homepageLandingPhoto.png');
+      }
+
+      .groupCardBack {
+        background-color: $lightGreyColor;
+        color: white;
+        transform: rotateY(180deg);
+
+        .descAndBtn {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: calc(100% - 60px);
+
+          p {
+            width: 100%;
+            text-align: left;
+            font-size: 16px !important;
+            margin: 0 10px;
+          }
+
+          .btnContainer {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+
+            @include media('<=big-mobile') {
+              width: 80%;
+              justify-content: flex-end;
+            }
+
+            .readMoreBtn {
+              padding: 2px 30px;
+              font-size: 16px;
+              font-weight: 400;
+              border: 3px solid $redColor;
+              color: $redColor;
+              background-color: $lightGreyColor;
+              width: auto;
+              height: auto;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 20px;
+              overflow: hidden;
+              position: relative;
+              transition: all linear 0.5s;
+              white-space: nowrap;
+
+              .label {
+                position: relative;
+                top: -1px;
+              }
+
+              .transition {
+                transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+                transition-duration: 500ms;
+                background-color: $redColor;
+                border-radius: 9999px;
+                width: 0;
+                height: 0;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+              }
+
+              &:hover {
+                color: $darkGreyColor;
+              }
+
+              &:hover .transition {
+                width: 14em;
+                height: 14em;
+              }
+
+              &:active {
+                transform: scale(0.97);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

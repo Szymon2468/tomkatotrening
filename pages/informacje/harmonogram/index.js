@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import GeneraslInfoPage from '../../../src/components/GeneralInfoPage/GeneraslInfoPage';
 import { schedule } from '../../../src/configs/schedule';
 import { uuid } from 'uuidv4';
@@ -18,6 +18,8 @@ function index() {
   const [days, setDays] = useState([]);
 
   const windowSize = useWindowSize();
+  const groupFilterRef = useRef();
+  const placeFilterRef = useRef();
 
   useEffect(() => {
     if (windowSize.width <= 1440 && windowSize.width > 1024) {
@@ -32,6 +34,9 @@ function index() {
       setDays(['Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek']);
     }
   }, [windowSize.width]);
+
+  const [groupFilter, setGroupFilter] = useState('wszystkie');
+  const [placeFilter, setPlaceFilter] = useState('wszystkie');
 
   const handleRightArrowClick = () => {
     const lastElIndex = allDays.findIndex((el) => el === days[days.length - 1]);
@@ -59,21 +64,41 @@ function index() {
     return;
   };
 
+  const generateAppropriateTraining = (day, hour) => {
+    if (
+      schedule.find(
+        (el) =>
+          el.day === day &&
+          el.hour === hour &&
+          ((groupFilter !== el.groupName && groupFilter !== 'wszystkie') ||
+            (placeFilter !== el.address && placeFilter !== 'wszystkie'))
+      )
+    ) {
+      return (
+        <Training
+          textColor={'#8f8f8f'}
+          training={schedule.find((el) => el.day === day && el.hour === hour)}
+        />
+      );
+    } else if (schedule.find((el) => el.day === day && el.hour === hour)) {
+      return (
+        <Training
+          textColor={''}
+          training={schedule.find((el) => el.day === day && el.hour === hour)}
+        />
+      );
+    }
+    return '';
+  };
+
   const generateTable = () => {
+    console.log(groupFilter, placeFilter);
     return hours.map((hour) => (
       <tr key={uuid()} className={styles.row}>
         <td className={styles.hour}>{hour}</td>
         {days.map((day) => (
           <td key={uuid()} className={styles.cell}>
-            {schedule.find((el) => el.day === day && el.hour === hour) ? (
-              <Training
-                training={schedule.find(
-                  (el) => el.day === day && el.hour === hour
-                )}
-              />
-            ) : (
-              ''
-            )}
+            {generateAppropriateTraining(day, hour)}
           </td>
         ))}
       </tr>
@@ -83,6 +108,61 @@ function index() {
   return (
     <GeneraslInfoPage name={'HARMONOGRAM'}>
       <div className='container'>
+        <div className={styles.filtersContainer}>
+          <h2>Filtruj harmonogram</h2>
+          <div className={styles.filters}>
+            <div className={styles.filter}>
+              <label htmlFor='groupSelect'>Grupa: </label>
+              <select
+                ref={groupFilterRef}
+                name='groupSelect'
+                id='groupSelect'
+                defaultValue={'wszystkie'}
+                onChange={() => {
+                  setGroupFilter(groupFilterRef.current.value);
+                }}
+              >
+                <option value={'wszystkie'}>wszystkie</option>
+                <option value={'Grupa przedszkolna'}>grupa przedszkolna</option>
+                <option value={'Grupa początkująca'}>grupa początkująca</option>
+                <option value={'Grupa średniozaawansowana'}>
+                  grupa średniozaawansowana
+                </option>
+                <option value={'Grupa zawodnicza'}>grupa zawodnicza</option>
+                <option value={'Grupa fitness'}>grupa fitness</option>
+              </select>
+            </div>
+
+            <div className={styles.filter}>
+              <label htmlFor='placeSelect'>Miejsce: </label>
+              <select
+                ref={placeFilterRef}
+                name='placeSelect'
+                id='placeSelect'
+                defaultValue={'wszystkie'}
+                onChange={() => {
+                  setPlaceFilter(placeFilterRef.current.value);
+                }}
+              >
+                <option value={'wszystkie'}>wszystkie</option>
+                <option value={'ul. Ordona 3a - Szkoła Podstawowa Nr 62'}>
+                  Katowice, ul. Ordona 3a
+                </option>
+                <option
+                  value={'ul. Niedpodległości 47 - Szkoła Podstawowa Nr 1'}
+                >
+                  Siemianowice Śląskie, ul. Niedpodległości 47
+                </option>
+                <option
+                  value={'ul. Iłłakowiczówny 13 - Szkoła Podstawowa Nr 36'}
+                >
+                  Katowice, ul. Iłłakowiczówny 13
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+
         <table className={styles.table}>
           <thead>
             <tr className={styles.tableHeader}>
@@ -116,19 +196,7 @@ function index() {
               ))}
             </tr>
           </thead>
-          <tbody className={styles.tableBody}>
-            {generateTable()}
-            {/* {hours.map((hour) => (
-            <tr key={uuid()}>
-              <td>{hour}</td>
-              {days.map((day) => (
-                <td>
-                  {schedule.find((el) => el.day === day && el.hour === hour)}
-                </td>
-              ))}
-            </tr>
-          ))} */}
-          </tbody>
+          <tbody className={styles.tableBody}>{generateTable()}</tbody>
         </table>
 
         <h3>Kilka przydatnych informacji...</h3>
@@ -256,14 +324,22 @@ function index() {
   );
 }
 
-const Training = ({ training }) => {
+const Training = ({ training, textColor }) => {
   return (
     <div className={styles.trainingContainer}>
-      <p className={styles.groupName}>{training.groupName}</p>
-      <p className={styles.city}>{training.city},</p>
-      <p className={styles.address}>{training.address}</p>
+      <p className={styles.groupName} style={{ color: textColor }}>
+        {training.groupName}
+      </p>
+      <p style={{ color: textColor }} className={styles.city}>
+        {training.city},
+      </p>
+      <p style={{ color: textColor }} className={styles.address}>
+        {training.address}
+      </p>
       <Link href={training.link}>
-        <p className={styles.link}>dowiedz się więcej o grupie</p>
+        <p className={styles.link} style={{ color: textColor }}>
+          dowiedz się więcej o grupie
+        </p>
       </Link>
       {training.additionalInfo && (
         <p className={styles.additionalInfo}>{training.additionalInfo}</p>
@@ -271,5 +347,18 @@ const Training = ({ training }) => {
     </div>
   );
 };
+
+{
+  /* {hours.map((hour) => (
+            <tr key={uuid()}>
+              <td>{hour}</td>
+              {days.map((day) => (
+                <td>
+                  {schedule.find((el) => el.day === day && el.hour === hour)}
+                </td>
+              ))}
+            </tr>
+          ))} */
+}
 
 export default index;

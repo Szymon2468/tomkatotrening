@@ -7,6 +7,7 @@ import styles from './index.module.scss';
 import photo3 from '../src/assets/homepage/photo3.webp';
 import { BsTelephoneFill } from 'react-icons/bs';
 import { IoMdMail } from 'react-icons/io';
+import Link from 'next/link';
 
 let inc = 1;
 let i = 0;
@@ -137,8 +138,102 @@ export default function Home() {
               </div>
             </div>
           </section>
+
+          <section>
+            <div className='container'>
+              <h2 className={styles.sectionHeader}>
+                PRZEGLĄDAJ GRUPY... I WYBIERZ ODPOWIEDNIĄ DLA SIEBIE
+              </h2>
+              <div className={styles.groupCardsContainer}>
+                <GroupCard
+                  title='Grupa przedszkolna'
+                  description={`Grupę tworzą dzieci w wieku przedszkolnym (4 – 6 lat). 
+                    Zajęcia to ćwiczenia ogólnorozwojowe z elementami Karate Oyama prowadzone
+                    w miłej atmosferze...`}
+                  img={'../src/assets/homepage/photo3.webp'}
+                  link='/'
+                ></GroupCard>
+
+                <GroupCard
+                  title='Grupa przedszkolna'
+                  description={`Grupę tworzą dzieci w wieku przedszkolnym (4 – 6 lat). 
+                    Zajęcia to ćwiczenia ogólnorozwojowe z elementami Karate Oyama prowadzone
+                    w miłej atmosferze...`}
+                  img={'../src/assets/homepage/photo3.webp'}
+                  link='/'
+                ></GroupCard>
+
+                <GroupCard
+                  title='Grupa przedszkolna'
+                  description={`Grupę tworzą dzieci w wieku przedszkolnym (4 – 6 lat). 
+                    Zajęcia to ćwiczenia ogólnorozwojowe z elementami Karate Oyama prowadzone
+                    w miłej atmosferze...`}
+                  img={'../src/assets/homepage/photo3.webp'}
+                  link='/'
+                ></GroupCard>
+
+                <GroupCard
+                  title='Grupa przedszkolna'
+                  description={`Grupę tworzą dzieci w wieku przedszkolnym (4 – 6 lat). 
+                    Zajęcia to ćwiczenia ogólnorozwojowe z elementami Karate Oyama prowadzone
+                    w miłej atmosferze...`}
+                  img={'../src/assets/homepage/photo3.webp'}
+                  link='/'
+                ></GroupCard>
+
+                <GroupCard
+                  title='Grupa przedszkolna'
+                  description={`Grupę tworzą dzieci w wieku przedszkolnym (4 – 6 lat). 
+                    Zajęcia to ćwiczenia ogólnorozwojowe z elementami Karate Oyama prowadzone
+                    w miłej atmosferze...`}
+                  img={'../src/assets/homepage/photo3.webp'}
+                  link='/'
+                ></GroupCard>
+              </div>
+            </div>
+          </section>
         </main>
       </MasterLayout>
     </>
   );
 }
+
+const GroupCard = ({ title, description, img, link }) => {
+  return (
+    <div className={styles.groupCard}>
+      <div className={styles.groupCardInner}>
+        <div
+          className={styles.groupCardFront}
+          style={{
+            backgroundImage: `background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url(${img});`
+          }}
+        >
+          <h3>{title.toUpperCase()}</h3>
+        </div>
+        <div className={styles.groupCardBack}>
+          <h3>{title.toUpperCase()}</h3>
+          <div className={styles.descAndBtn}>
+            <p>{description}</p>
+            <div className={styles.btnContainer}>
+              <button
+                type='button'
+                className={styles.readMoreBtn}
+                onClick={() => {
+                  window.location.href = link;
+                }}
+              >
+                <span className={styles.transition}></span>
+                <span className={styles.gradient}></span>
+                <span className={styles.label}>Czytaj więcej</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
