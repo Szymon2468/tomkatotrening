@@ -35,17 +35,19 @@ function index() {
             <p>
               Więcej informacji dotyczących Śląskiego Klubu Karate "Goliat"
               znajdziesz na oficjalnej stronie{' '}
-              <a href='/'>www.karategoliat.pl</a>
+              <a href='www.karategoliat.pl' target='_blank'>
+                www.karategoliat.pl
+              </a>
             </p>
           </div>
 
-          <Link href='/'>
+          <a href='http://kswgoliat.pl/' target='_blank'>
             <img
               src={linkImg.src}
               alt=''
               className={classNames(styles.img, styles.linkImg)}
             />
-          </Link>
+          </a>
         </div>
       </div>
     </GeneraslInfoPage>

@@ -33,7 +33,7 @@ function index() {
             stanowią pomost pomiędzy uczeniem podstaw a realną walką.
           </p>
         </div>
-        <Link href='/'>
+        <Link href='www.oyama-karate.pl'>
           <img src={linkImg.src} alt='' className={styles.linkImg} />
         </Link>
 

@@ -149,45 +149,53 @@ export default function Home() {
                   title='Grupa przedszkolna'
                   description={`Grupę tworzą dzieci w wieku przedszkolnym (4 – 6 lat). 
                     Zajęcia to ćwiczenia ogólnorozwojowe z elementami Karate Oyama prowadzone
-                    w miłej atmosferze...`}
+                    w miłej atmosferze. Tematyka zajęć i korzyści płynące z trenowania Karate Oyama: 
+                    nauka podstawowych technik Karate Oyama,
+                    ćwiczenia poprawiające ogólną sprawność fizyczną...`}
                   img={'../src/assets/homepage/photo3.webp'}
-                  link='/'
+                  link='/grupy/grupa-przedszkolna'
                 ></GroupCard>
 
                 <GroupCard
-                  title='Grupa przedszkolna'
-                  description={`Grupę tworzą dzieci w wieku przedszkolnym (4 – 6 lat). 
-                    Zajęcia to ćwiczenia ogólnorozwojowe z elementami Karate Oyama prowadzone
-                    w miłej atmosferze...`}
+                  title='Grupa początkująca'
+                  description={`Aktualnie, zarówno w Katowicach jak i w Siemianowicach Śląskich, to ok. 20
+                  osobowe grupy dzieci w przedziale wiekowym 7 – 12 lat, które rozpoczęły
+                  poznawanie tajników Karate Oyama. Przygodę z karate w tych grupach mogą
+                  rozpocząć dzieci do 14 roku życia. Zajęcia prowadzę na podstawie systemu szkolenia Oyama Karate...`}
                   img={'../src/assets/homepage/photo3.webp'}
-                  link='/'
+                  link='/grupy/grupa-poczatkujaca'
                 ></GroupCard>
 
                 <GroupCard
-                  title='Grupa przedszkolna'
-                  description={`Grupę tworzą dzieci w wieku przedszkolnym (4 – 6 lat). 
-                    Zajęcia to ćwiczenia ogólnorozwojowe z elementami Karate Oyama prowadzone
-                    w miłej atmosferze...`}
+                  title='Grupa średniozaawansowana'
+                  description={`Aktualnie, zarówno w Katowicach jak i w Siemianowicach Śląskich, to ok.
+                  20 osobowe grupy dzieci w przedziale wiekowym 8 - 14 lat, które mają już
+                  za sobą przynajmniej dwa lata treningu. Zajęcia prowadzę na podstawie systemu szkolenia Oyama Karate, a także w
+                  oparciu o swoje...`}
                   img={'../src/assets/homepage/photo3.webp'}
-                  link='/'
+                  link='/grupy/grupa-sredniozaawansowana'
                 ></GroupCard>
 
                 <GroupCard
-                  title='Grupa przedszkolna'
-                  description={`Grupę tworzą dzieci w wieku przedszkolnym (4 – 6 lat). 
-                    Zajęcia to ćwiczenia ogólnorozwojowe z elementami Karate Oyama prowadzone
-                    w miłej atmosferze...`}
+                  title='Grupa zawodnicza'
+                  description={` W tej grupie treningi skierowane są głównie dla przygotowujących się do
+                  zawodów w konkurencji Kumite (walka), ale również dla osób szukających
+                  rekreacji ruchowej przy jednoczesnym zgłębianiu tajników Oyama Karate.
+                  Podczas zajęć korzystamy ze sprzętu specjalistycznego i sportowego tj.
+                  worki i tarcze treningowe...`}
                   img={'../src/assets/homepage/photo3.webp'}
-                  link='/'
+                  link='/grupy/grupa-zawodnicza'
                 ></GroupCard>
 
                 <GroupCard
-                  title='Grupa przedszkolna'
-                  description={`Grupę tworzą dzieci w wieku przedszkolnym (4 – 6 lat). 
-                    Zajęcia to ćwiczenia ogólnorozwojowe z elementami Karate Oyama prowadzone
-                    w miłej atmosferze...`}
+                  title='Grupa fitness'
+                  description={`Na zajęcia w tej grupie licznie pojawiają się zarówno kobiety jak i
+                  mężczyźni powyżej 16 roku życia. Ze względu na charakterystykę treningu
+                  (wysoka intensywność) zajęcia nie przekraczają czasu 60 minut. Treningi
+                  prowadzę na podstawie doświadczeń z dotychczasowej pracy szkoleniowej, a
+                  także doświadczeń...`}
                   img={'../src/assets/homepage/photo3.webp'}
-                  link='/'
+                  link='/grupy/grupa-fitness'
                 ></GroupCard>
               </div>
             </div>
