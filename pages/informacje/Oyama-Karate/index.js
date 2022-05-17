@@ -10,7 +10,7 @@ function Index() {
   return (
     <GeneraslInfoPage name={'OYAMA KARATE'}>
       <div className={classNames('container', styles.gridContainer)}>
-        <img src={img.src} alt='' className={styles.img} />
+        <img src={img.src} alt='Sensei Tomasz Mrowiec' className={styles.img} />
 
         <div className={styles.text}>
           <p>
@@ -34,7 +34,11 @@ function Index() {
           </p>
         </div>
         <Link href='www.oyama-karate.pl'>
-          <img src={linkImg.src} alt='' className={styles.linkImg} />
+          <img
+            src={linkImg.src}
+            alt='Sensei Tomasz Mrowiec'
+            className={styles.linkImg}
+          />
         </Link>
 
         <div className={styles.info}>

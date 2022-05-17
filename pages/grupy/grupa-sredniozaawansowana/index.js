@@ -60,7 +60,7 @@ function Index() {
     <GeneralAboutPage
       name={'GRUPA ŚREDNIOZAAWANSOWANA'}
       imgSrc={img}
-      imgAlt={''}
+      imgAlt={'Sensei Tomasz Mrowiec'}
       text={text}
       imgClass={styles.img}
       textClass={styles.text}

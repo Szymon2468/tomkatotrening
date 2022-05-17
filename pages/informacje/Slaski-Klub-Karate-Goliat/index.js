@@ -9,7 +9,11 @@ function Index() {
     <GeneraslInfoPage name={'ŚLĄSKI KLUB KARATE GOLIAT'}>
       <div className={classNames('container', styles.container)}>
         <div className={styles.textAndImgContainer}>
-          <img src={img.src} alt='' className={styles.img} />
+          <img
+            src={img.src}
+            alt='Sensei Tomasz Mrowiec'
+            className={styles.img}
+          />
           <p className={styles.text1}>
             Śląski Klub Karate `&quot;` Goliat `&quot;` powstał w 1992r. Został
             założony przez obecnego Prezesa Klubu, Sensei Jerzego Walaszczyka, 4
@@ -43,7 +47,7 @@ function Index() {
           <a href='http://kswgoliat.pl/' target='_blank' rel='noreferrer'>
             <img
               src={linkImg.src}
-              alt=''
+              alt='Sensei Tomasz Mrowiec'
               className={classNames(styles.img, styles.linkImg)}
             />
           </a>

@@ -35,7 +35,7 @@ function Index() {
     <GeneralAboutPage
       name={'GRUPA PRZEDSZKOLNA'}
       imgSrc={img}
-      imgAlt={''}
+      imgAlt={'Sensei Tomasz Mrowiec'}
       text={text}
       imgClass={styles.img}
       textClass={styles.text}

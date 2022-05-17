@@ -91,6 +91,10 @@
     gap: 30px;
   }
 
+  @include media('<=big-mobile') {
+    margin-bottom: 50px;
+  }
+
   .infoImg {
     background-repeat: no-repeat;
     background-position: center;
@@ -261,7 +265,7 @@
 
   @include media('<=big-mobile') {
     width: 80%;
-    margin: 70px auto 30px auto;
+    margin: 30px auto 30px auto;
   }
 }
 
@@ -338,6 +342,54 @@
     width: 300px;
   }
 
+  .scheduleCard {
+    width: 300px;
+    height: 400px;
+    background-color: $lightGreyColor;
+    border: 3px solid $footerColor;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      background-color: $footerColor;
+      transition: all linear 0.3s;
+      height: 100%;
+      width: 0%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      &::after {
+        width: 100%;
+      }
+    }
+
+    h3 {
+      width: 100%;
+      text-align: center;
+      color: $redColor;
+      z-index: 100;
+    }
+
+    svg {
+      width: 60px;
+      height: 60px;
+      fill: $redColor;
+      margin: 80px auto 0 auto;
+      z-index: 100;
+    }
+  }
+
   .groupCard {
     background-color: transparent;
     width: 300px;
@@ -357,7 +409,6 @@
       text-align: center;
       transition: transform 0.8s;
       transform-style: preserve-3d;
-      border-radius: 20px;
       border: 3px solid $footerColor;
 
       .groupCardFront,

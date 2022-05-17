@@ -66,7 +66,7 @@ function Index() {
     <GeneralAboutPage
       name={'GRUPA ZAWODNICZA'}
       imgSrc={img}
-      imgAlt={''}
+      imgAlt={'Sensei Tomasz Mrowiec'}
       text={text}
       imgClass={styles.img}
       textClass={styles.text}

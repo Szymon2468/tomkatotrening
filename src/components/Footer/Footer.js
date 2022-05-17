@@ -21,7 +21,13 @@ function Footer() {
             <a href='mailto:tomkatotrening@wp.pl'>
               <p>e-mail: tomkatotrening@wp.pl</p>
             </a>
-            <p>Facebook: Tomasz Mrowiec tomkatotrening</p>
+            <a
+              href='https://www.facebook.com/tomkatotrening/'
+              target={'_blank'}
+              rel='noreferrer'
+            >
+              <p>Facebook: Tomasz Mrowiec tomkatotrening</p>
+            </a>
           </div>
         </div>
 

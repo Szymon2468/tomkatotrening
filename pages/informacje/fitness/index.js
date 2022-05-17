@@ -9,7 +9,11 @@ function Index() {
     <GeneraslInfoPage name={'FITNESS'}>
       <div className='container'>
         <div className={styles.textAndImgContainer}>
-          <img src={img.src} alt='' className={styles.img} />
+          <img
+            src={img.src}
+            alt='Sensei Tomasz Mrowiec'
+            className={styles.img}
+          />
           <div className={styles.text}>
             <p>
               Fitness to styl życia przejawiający się troską o szeroko pojmowane

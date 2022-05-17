@@ -1,6 +1,7 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { BsTelephoneFill } from 'react-icons/bs';
+import { BsTelephoneFill, BsFillArrowRightCircleFill } from 'react-icons/bs';
 import { IoMdMail } from 'react-icons/io';
 import MasterLayout from '../src/components/MasterLayout/MasterLayout';
 import styles from './index.module.scss';
@@ -106,16 +107,13 @@ export default function Home() {
                   <p>O MNIE</p>
                 </div>
                 <div className={styles.text}>
+                  <h3>Sensei Tomasz Mrowiec, 4 Dan</h3>
                   <p>
                     Obecnie w prowadzonych przeze mnie grupach trenuje blisko
                     200 adeptów karate i kilkudziesięcioosobowa grupa miłośników
                     fitness. Spośród zawodników karate wielu z nich regularnie
                     startuje w turniejach osiągając sukcesy zarówno na arenie
-                    krajowej jak i międzynarodowej. Dotychczasowy dorobek
-                    sportowy moich wychowanków to blisko 600 pozycji medalowych
-                    wywalczonych na różnego rodzaju zawodach Oyama Karate rangi
-                    Mistrzostw Europy, Mistrzostw Polski, Pucharu Polski czy
-                    turniejach regionalnych
+                    krajowej jak i międzynarodowej
                   </p>
                   <div className={styles.btnContainer}>
                     <button
@@ -192,6 +190,14 @@ export default function Home() {
                   img={'../src/assets/homepage/photo3.webp'}
                   link='/grupy/grupa-fitness'
                 ></GroupCard>
+
+                <Link href='informacje/harmonogram'>
+                  <div className={styles.scheduleCard}>
+                    <h3>ZOBACZ HARMONOGRAM ZAJĘĆ</h3>
+
+                    <BsFillArrowRightCircleFill />
+                  </div>
+                </Link>
               </div>
             </div>
           </section>
