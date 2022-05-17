@@ -43,7 +43,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta
+          name='viewport'
+          content='width=device-width, initial-scale=1'
+          lang='pl'
+        />
         <title>
           Oyama Karate Katowice - Siemianowice Śląskie - Sensei Tomasz Mrowiec,
           4 Dan

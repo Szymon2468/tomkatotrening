@@ -233,21 +233,39 @@
 }
 
 .filtersContainer {
+  width: auto;
+
+  @include media('<=big-mobile') {
+    justify-content: center;
+  }
+
+  h2 {
+    width: fit-content;
+
+    @include media('<=big-mobile') {
+      margin: 0 auto;
+    }
+  }
+
   .filters {
     display: flex;
     margin: 30px 50px 30px 0;
-    width: auto;
-    gap: 50px;
+    width: 300px;
+    gap: 30px;
 
     @include media('<=tablet-portrait') {
       flex-direction: column;
       gap: 30px;
     }
 
+    @include media('<=big-mobile') {
+      margin: 30px auto;
+    }
+
     .filter {
       display: flex;
       justify-content: space-between;
-      width: 350px;
+      max-width: 300px;
 
       label {
         font-size: 20px;
@@ -257,7 +275,7 @@
       }
 
       select {
-        width: 250px;
+        width: 200px;
       }
     }
   }
