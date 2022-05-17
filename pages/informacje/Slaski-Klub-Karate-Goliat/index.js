@@ -15,7 +15,7 @@ function Index() {
             className={styles.img}
           />
           <p className={styles.text1}>
-            Śląski Klub Karate `&quot;` Goliat `&quot;` powstał w 1992r. Został
+            Śląski Klub Karate &quot;Goliat&quot; powstał w 1992r. Został
             założony przez obecnego Prezesa Klubu, Sensei Jerzego Walaszczyka, 4
             Dan. Jesteśmy największym Klubem Oyama Karate na terenie Górnego
             Śląska i jednym z największych w Polsce. Posiadamy ok. 50 sekcji w
@@ -36,8 +36,8 @@ function Index() {
         <div className={styles.linkContainer}>
           <div className={styles.text}>
             <p>
-              Więcej informacji dotyczących Śląskiego Klubu Karate `&quot;`
-              Goliat `&quot;` znajdziesz na oficjalnej stronie{' '}
+              Więcej informacji dotyczących Śląskiego Klubu Karate
+              &quot;Goliat&quot; znajdziesz na oficjalnej stronie{' '}
               <a href='www.karategoliat.pl' target='_blank' rel='noreferrer'>
                 www.karategoliat.pl
               </a>

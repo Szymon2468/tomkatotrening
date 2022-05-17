@@ -198,49 +198,70 @@ function Index() {
           <tbody className={styles.tableBody}>{generateTable()}</tbody>
         </table>
 
+        <h2 className={styles.sectionHeader}>
+          SKONTAKTUJ SIĘ ZE MNĄ JUŻ TERAZ
+        </h2>
+
+        <div className={styles.contactContainer}>
+          <span>
+            <div className={styles.contact}>
+              <BsTelephoneFill />
+              <a href='tel:600-288-637'>
+                <p>600 288 637</p>
+              </a>
+            </div>
+            <div className={styles.contact}>
+              <IoMdMail />
+              <a href='mailto:tomkatotrening@wp.pl'>
+                <p>tomkatotrening@wp.pl</p>
+              </a>
+            </div>
+          </span>
+        </div>
+
         <h3>Kilka przydatnych informacji...</h3>
         <br />
-        <p>
+        <p className='smaller'>
           Jeżeli chcesz zapisać się do jednej z grup skontaktuj się ze mną
           mailowo, telefonicznie lub osobiście przyjdź na salę treningową.
           Pierwszy trening jest całkowicie bezpłatny tak więc nie ma żadnego
           ryzyka - postaram się abyś został / została z nami na stałe.
         </p>
         <br />
-        <p>
+        <p className='smaller'>
           Na pierwsze zajęcia należy zabrać ze sobą wygodny strój sportowy
           (krótkie spodenki / spodnie dresowe oraz t-shirt).{' '}
         </p>
         <br />
-        <p>
+        <p className='smaller'>
           Zajęcia w naszym Klubie skierowane są do wszystkich, którzy nie
           szukają wymówek i chcą aktywnie spędzać wolny czas, dbając tym samym o
           dobrą formę i samopoczucie.{' '}
         </p>
         <br />
-        <p>
-          Koszt treningów karate wynosi 120zł,-/miesiąc + jednorazowa opłata na
-          dany sezon w wysokości 40zł,- do Klubu oraz organizacji Oyama PFK
-          (Oyama Polska Federacja Karate) zawierającą również roczną składkę
+        <p className='smaller'>
+          Koszt treningów karate wynosi 120zł/miesiąc + jednorazowa opłata na
+          dany sezon w wysokości 40zł do Klubu oraz organizacji Oyama PFK (Oyama
+          Polska Federacja Karate) zawierającą również roczną składkę
           ubezpieczeniową. W ramach jednej składki można trenować do 5 razy w
           tygodniu we wszystkich naszych lokalizacjach! Istnieje możliwość
           skorzystania ze zniżki rodzinnej.
         </p>
         <br />
-        <p>
-          Koszt zajęć fitness wynosi 110zł,-/miesiąc lub 20zł,-/jednorazowe
-          wejście. Dla osób kontynuujących udział w treningach miesięczna
-          składka wynosi 100zł,-
+        <p className='smaller'>
+          Koszt zajęć fitness wynosi 110zł/miesiąc lub 20zł/jednorazowe wejście.
+          Dla osób kontynuujących udział w treningach miesięczna składka wynosi
+          100zł.
         </p>
         <br />
         <h3 className={styles.important}>WAŻNE!</h3>
-        <p>
+        <p className='smaller'>
           Warunkiem dopuszczjącym do uczestnictwa w zajęciach karate i fitness
-          jest złożenie `&quot;` Deklaracji Klubowej/Członkowskiej `&quot;` na
-          dany sezon treningowy (2020/2021) oraz bezwzględne zapoznanie się z
-          `&quot;` Regulaminem Śląskiego Klubu Karate Goliat `&quot;`, `&quot;`
-          Regulaminem dotyczącym składek `&quot;`, `&quot;` Regulaminem Covid-19
-          `&quot;` i `&quot;` Klauzulą RODO `&quot;`! Regulaminy i dokumenty do
+          jest złożenie &quot;Deklaracji Klubowej/Członkowskiej&quot; na dany
+          sezon treningowy (2020/2021) oraz bezwzględne zapoznanie się z
+          &quot;Regulaminem Śląskiego Klubu Karate Goliat&quot;,
+          &quot;Regulaminem dotyczącym składek&quot;, &quot;Regulaminem
+          Covid-19&quot; i &quot;Klauzulą RODO&quot;! Regulaminy i dokumenty do
           pobrania dostępne są na oficjalnej stronie Klubu:{' '}
           <a
             href='http://kswgoliat.pl/dokumenty-do-pobrania'
@@ -299,26 +320,6 @@ function Index() {
             </div>
           </div>
         </div>
-
-        <h2 className={styles.sectionHeader}>
-          SKONTAKTUJ SIĘ ZE MNĄ JUŻ TERAZ
-        </h2>
-        <div className={styles.contactContainer}>
-          <span>
-            <div className={styles.contact}>
-              <BsTelephoneFill />
-              <a href='tel:600-288-637'>
-                <p>600 288 637</p>
-              </a>
-            </div>
-            <div className={styles.contact}>
-              <IoMdMail />
-              <a href='mailto:tomkatotrening@wp.pl'>
-                <p>tomkatotrening@wp.pl</p>
-              </a>
-            </div>
-          </span>
-        </div>
       </div>
     </GeneraslInfoPage>
   );
@@ -347,18 +348,5 @@ const Training = ({ training, textColor }) => {
     </div>
   );
 };
-
-{
-  /* {hours.map((hour) => (
-            <tr key={uuid()}>
-              <td>{hour}</td>
-              {days.map((day) => (
-                <td>
-                  {schedule.find((el) => el.day === day && el.hour === hour)}
-                </td>
-              ))}
-            </tr>
-          ))} */
-}
 
 export default Index;

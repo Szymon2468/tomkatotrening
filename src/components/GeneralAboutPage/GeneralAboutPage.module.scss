@@ -56,3 +56,22 @@
     }
   }
 }
+
+.shceduleLinkContainer {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  color: $redColor;
+
+  .scheduleLink {
+    text-decoration: underline;
+    margin-left: 10px;
+    color: $textColor;
+
+    &:hover {
+      text-decoration: underline;
+      color: $redColor;
+      cursor: pointer;
+    }
+  }
+}
