@@ -10,7 +10,7 @@ function Footer() {
       <div className={styles.footer}>
         <div className={styles.logoAndContactContainer}>
           <div className={styles.logo}>
-            <Image src={logo.src} width={273} height={70}></Image>
+            <Image src={logo.src} width={273} height={70} alt='logo'></Image>
           </div>
 
           <div className={styles.contact}>

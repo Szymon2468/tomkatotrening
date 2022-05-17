@@ -283,6 +283,7 @@ function Index() {
               <iframe
                 src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2550.0162758332103!2d19.017627815708277!3d50.27295470801946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ce23bc3915c7%3A0xa135506eade90a50!2zScWCxYJha293aWN6w7N3bnkgMTMsIDQwLTEzNCBLYXRvd2ljZQ!5e0!3m2!1sen!2spl!4v1652262719943!5m2!1sen!2spl'
                 width='100%'
+                title='lokalizacja Szkoły Podstawowej Nr 36 w Katowicach'
                 height='100%'
                 allowFullScreen=''
                 loading='lazy'
@@ -298,6 +299,7 @@ function Index() {
                 src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2550.2344263976033!2d19.02593051570814!3d50.268881308312245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ce2ff1d84be5%3A0x5ffa1290e9d8af09!2sOrdona%203A%2C%2040-164%20Katowice!5e0!3m2!1sen!2spl!4v1652262955133!5m2!1sen!2spl'
                 width='100%'
                 height='100%'
+                title='lokalizacja Szkoły Podstawowej Nr 62 w Katowicach'
                 allowFullScreen=''
                 loading='lazy'
                 referrerpolicy='no-referrer-when-downgrade'
@@ -313,6 +315,7 @@ function Index() {
                 src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2548.51611640858!2d19.005667615709125!3d50.300959806006176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716d1f4f3468757%3A0xd3330ea42f6f57b4!2zTmllcG9kbGVnxYJvxZtjaSA0NywgNDEtMTAwIFNpZW1pYW5vd2ljZSDFmmzEhXNraWU!5e0!3m2!1sen!2spl!4v1652263002392!5m2!1sen!2spl'
                 width='100%'
                 height='100%'
+                title='lokalizacja Szkoły Podstawowej Nr 1 w Siemianowicach Śląskich'
                 allowFullScreen=''
                 loading='lazy'
                 referrerpolicy='no-referrer-when-downgrade'

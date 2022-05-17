@@ -38,7 +38,6 @@ export default function Home() {
         inc = 1;
       }
     }, animationInterval);
-    // return clearInterval(interval);
   }, []);
 
   return (
@@ -46,19 +45,25 @@ export default function Home() {
       <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <title>
-          Oyama Karate Katowice - Ligota - Panewniki - Piotrowice - Podlesie,
-          oraz Gliwice - Oyama-karate.eu - Nasze sekcje - oyama-karate.eu
+          Oyama Karate Katowice - Siemianowice Śląskie - Sensei Tomasz Mrowiec,
+          4 Dan
         </title>
         <meta
           property='og:title'
-          content={`Oyama Karate Katowice - Ligota - Panewniki - Piotrowice - Podlesie,
-          oraz Gliwice - Oyama-karate.eu - Nasze sekcje - oyama-karate.eu`}
+          content={`Oyama Karate Katowice - Siemianowice Śląskie - Sensei Tomasz Mrowiec,
+          4 Dan`}
           key='ogtitle'
         />
         <meta key='robots' name='robots' content='index,follow' />
         <meta key='googlebot' name='googlebot' content='index,follow' />
         <meta name='description' content={'opis strony'} />
-        <meta property='og:description' content={'opis strony'} key='ogdesc' />
+        <meta
+          property='og:description'
+          content={
+            'Oyama Karate Katowice oraz Siemianowice Śląskie, zajęcia prowadzone przez Sensei Tomasza Mrowca, 4 Dan'
+          }
+          key='ogdesc'
+        />
       </Head>
       <MasterLayout isNavBackgroundTransparent={true}>
         <main>
