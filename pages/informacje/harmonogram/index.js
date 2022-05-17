@@ -1,20 +1,19 @@
-import React, { useRef } from 'react';
-import GeneraslInfoPage from '../../../src/components/GeneralInfoPage/GeneraslInfoPage';
-import { schedule } from '../../../src/configs/schedule';
-import { uuid } from 'uuidv4';
-import styles from './index.module.scss';
-import Link from 'next/link';
-import { useEffect, useState } from 'react/cjs/react.development';
-import useWindowSize from '../../../src/hooks/useWindowSize';
-import { MdArrowLeft, MdArrowRight } from 'react-icons/md';
 import classNames from 'classnames';
+import Link from 'next/link';
+import React, { useEffect, useRef, useState } from 'react';
 import { BsTelephoneFill } from 'react-icons/bs';
 import { IoMdMail } from 'react-icons/io';
+import { MdArrowLeft, MdArrowRight } from 'react-icons/md';
+import { uuid } from 'uuidv4';
+import GeneraslInfoPage from '../../../src/components/GeneralInfoPage/GeneraslInfoPage';
+import { schedule } from '../../../src/configs/schedule';
+import useWindowSize from '../../../src/hooks/useWindowSize';
+import styles from './index.module.scss';
 
 const hours = ['16:00', '17:00', '17:45', '18:45', '19:00', '20:00'];
 const allDays = ['Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek'];
 
-function index() {
+function Index() {
   const [days, setDays] = useState([]);
 
   const windowSize = useWindowSize();
@@ -237,10 +236,11 @@ function index() {
         <h3 className={styles.important}>WAŻNE!</h3>
         <p>
           Warunkiem dopuszczjącym do uczestnictwa w zajęciach karate i fitness
-          jest złożenie "Deklaracji Klubowej/Członkowskiej" na dany sezon
-          treningowy (2020/2021) oraz bezwzględne zapoznanie się z "Regulaminem
-          Śląskiego Klubu Karate Goliat", "Regulaminem dotyczącym składek",
-          "Regulaminem Covid-19" i "Klauzulą RODO"! Regulaminy i dokumenty do
+          jest złożenie `&quot;` Deklaracji Klubowej/Członkowskiej `&quot;` na
+          dany sezon treningowy (2020/2021) oraz bezwzględne zapoznanie się z
+          `&quot;` Regulaminem Śląskiego Klubu Karate Goliat `&quot;`, `&quot;`
+          Regulaminem dotyczącym składek `&quot;`, `&quot;` Regulaminem Covid-19
+          `&quot;` i `&quot;` Klauzulą RODO `&quot;`! Regulaminy i dokumenty do
           pobrania dostępne są na oficjalnej stronie Klubu:{' '}
           <a
             href='http://kswgoliat.pl/dokumenty-do-pobrania'
@@ -263,7 +263,7 @@ function index() {
                 src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2550.0162758332103!2d19.017627815708277!3d50.27295470801946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ce23bc3915c7%3A0xa135506eade90a50!2zScWCxYJha293aWN6w7N3bnkgMTMsIDQwLTEzNCBLYXRvd2ljZQ!5e0!3m2!1sen!2spl!4v1652262719943!5m2!1sen!2spl'
                 width='100%'
                 height='100%'
-                allowfullscreen=''
+                allowFullScreen=''
                 loading='lazy'
                 referrerpolicy='no-referrer-when-downgrade'
               ></iframe>
@@ -277,7 +277,7 @@ function index() {
                 src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2550.2344263976033!2d19.02593051570814!3d50.268881308312245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ce2ff1d84be5%3A0x5ffa1290e9d8af09!2sOrdona%203A%2C%2040-164%20Katowice!5e0!3m2!1sen!2spl!4v1652262955133!5m2!1sen!2spl'
                 width='100%'
                 height='100%'
-                allowfullscreen=''
+                allowFullScreen=''
                 loading='lazy'
                 referrerpolicy='no-referrer-when-downgrade'
               ></iframe>
@@ -292,7 +292,7 @@ function index() {
                 src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2548.51611640858!2d19.005667615709125!3d50.300959806006176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716d1f4f3468757%3A0xd3330ea42f6f57b4!2zTmllcG9kbGVnxYJvxZtjaSA0NywgNDEtMTAwIFNpZW1pYW5vd2ljZSDFmmzEhXNraWU!5e0!3m2!1sen!2spl!4v1652263002392!5m2!1sen!2spl'
                 width='100%'
                 height='100%'
-                allowfullscreen=''
+                allowFullScreen=''
                 loading='lazy'
                 referrerpolicy='no-referrer-when-downgrade'
               ></iframe>
@@ -361,4 +361,4 @@ const Training = ({ training, textColor }) => {
           ))} */
 }
 
-export default index;
+export default Index;

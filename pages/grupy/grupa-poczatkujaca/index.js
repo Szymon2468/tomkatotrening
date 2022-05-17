@@ -40,7 +40,7 @@ const text = (
   </>
 );
 
-function index() {
+function Index() {
   return (
     <GeneralAboutPage
       name={'GRUPA POCZĄTKUJĄCA'}
@@ -54,4 +54,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

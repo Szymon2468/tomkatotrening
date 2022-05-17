@@ -4,7 +4,7 @@ import img from '../../../src/assets/information/fitness_info_image.webp';
 import styles from './index.module.scss';
 import classNames from 'classnames';
 
-function index() {
+function Index() {
   return (
     <GeneraslInfoPage name={'FITNESS'}>
       <div className='container'>
@@ -56,4 +56,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

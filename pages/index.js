@@ -1,13 +1,9 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import { useEffect } from 'react';
-import { useState } from 'react/cjs/react.development';
-import MasterLayout from '../src/components/MasterLayout/MasterLayout';
-import styles from './index.module.scss';
-import photo3 from '../src/assets/homepage/photo3.webp';
+import { useEffect, useState } from 'react';
 import { BsTelephoneFill } from 'react-icons/bs';
 import { IoMdMail } from 'react-icons/io';
-import Link from 'next/link';
+import MasterLayout from '../src/components/MasterLayout/MasterLayout';
+import styles from './index.module.scss';
 
 let inc = 1;
 let i = 0;
@@ -129,9 +125,9 @@ export default function Home() {
                         window.location.href = 'o-mnie';
                       }}
                     >
-                      <span class={styles.transition}></span>
-                      <span class={styles.gradient}></span>
-                      <span class={styles.label}>Czytaj więcej...</span>
+                      <span className={styles.transition}></span>
+                      <span className={styles.gradient}></span>
+                      <span className={styles.label}>Czytaj więcej...</span>
                     </button>
                   </div>
                 </div>

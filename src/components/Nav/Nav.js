@@ -6,7 +6,7 @@ import classNames from 'classnames';
 import Dropdown from './Dropdown/Dropdown.js';
 import useWindowSize, { windowSize } from '../../hooks/useWindowSize';
 import HamburgerMenu from './HamburgerMenu/HamburgerMenu';
-import { useState } from 'react/cjs/react.development';
+import { useState } from 'react';
 
 function Nav({ isNavBackgroundTransparent }) {
   const windowSize = useWindowSize();

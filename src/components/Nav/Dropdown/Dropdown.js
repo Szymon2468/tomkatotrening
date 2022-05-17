@@ -1,7 +1,6 @@
 import classNames from 'classnames';
 import Link from 'next/link';
-import { useState } from 'react';
-import { useEffect } from 'react/cjs/react.development';
+import { useEffect, useState } from 'react';
 import styles from './Dropdown.module.scss';
 
 function Dropdown({ options, title, paths, isNavTransparent }) {

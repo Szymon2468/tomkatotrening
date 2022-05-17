@@ -47,6 +47,7 @@ function ContactPage() {
                 <a
                   href='https://www.facebook.com/tomkatotrening/'
                   target={'_blank'}
+                  rel='noreferrer'
                   className={styles.contact}
                 >
                   <BsFacebook className={styles.svg} />

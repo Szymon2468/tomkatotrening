@@ -6,7 +6,7 @@ import linkImg from '../../../src/assets/information/oyama_karate_info_image_lin
 import classNames from 'classnames';
 import Link from 'next/link';
 
-function index() {
+function Index() {
   return (
     <GeneraslInfoPage name={'OYAMA KARATE'}>
       <div className={classNames('container', styles.gridContainer)}>
@@ -62,4 +62,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

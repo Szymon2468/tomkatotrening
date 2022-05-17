@@ -4,7 +4,7 @@ import img from '../../../src/assets/groups/fitness_group_image.webp';
 import styles from './index.module.scss';
 import useWindowSize from '../../../src/hooks/useWindowSize';
 
-function index() {
+function Index() {
   const windowSize = useWindowSize();
   const text = (
     <>
@@ -78,4 +78,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;
