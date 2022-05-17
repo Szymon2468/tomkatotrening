@@ -188,8 +188,7 @@ export default function Home() {
                   description={`Na zajęcia w tej grupie licznie pojawiają się zarówno kobiety jak i
                   mężczyźni powyżej 16 roku życia. Ze względu na charakterystykę treningu
                   (wysoka intensywność) zajęcia nie przekraczają czasu 60 minut. Treningi
-                  prowadzę na podstawie doświadczeń z dotychczasowej pracy szkoleniowej, a
-                  także doświadczeń...`}
+                  prowadzę na podstawie doświadczeń z dotychczasowej pracy szkoleniowej...`}
                   img={'../src/assets/homepage/photo3.webp'}
                   link='/grupy/grupa-fitness'
                 ></GroupCard>
