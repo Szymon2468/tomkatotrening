@@ -14,7 +14,7 @@ function Footer() {
           </div>
 
           <div className={styles.contact}>
-            <p>Tomasz Mrowiec</p>
+            <p className={styles.footerLink}>Tomasz Mrowiec</p>
             <a href='tel:600-288-637'>
               <p className={styles.footerLink}>tel: 600 288 637</p>
             </a>
