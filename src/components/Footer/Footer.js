@@ -16,17 +16,19 @@ function Footer() {
           <div className={styles.contact}>
             <p>Tomasz Mrowiec</p>
             <a href='tel:600-288-637'>
-              <p>tel: 600 288 637</p>
+              <p className={styles.footerLink}>tel: 600 288 637</p>
             </a>
             <a href='mailto:tomkatotrening@wp.pl'>
-              <p>e-mail: tomkatotrening@wp.pl</p>
+              <p className={styles.footerLink}>e-mail: tomkatotrening@wp.pl</p>
             </a>
             <a
               href='https://www.facebook.com/tomkatotrening/'
               target={'_blank'}
               rel='noreferrer'
             >
-              <p>Facebook: Tomasz Mrowiec tomkatotrening</p>
+              <p className={styles.footerLink}>
+                Facebook: Tomasz Mrowiec tomkatotrening
+              </p>
             </a>
           </div>
         </div>
