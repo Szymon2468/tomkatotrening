@@ -28,6 +28,7 @@ function About() {
 
             <div className={classNames(styles.tile, styles.firstTile)}>
               <img
+                alt='Sensei Tomasz Mrowiec'
                 src={photo1.src}
                 height={360}
                 width={270}
@@ -111,6 +112,7 @@ function About() {
                 </div>
                 <img
                   src={photo2.src}
+                  alt='Sensei Tomasz Mrowiec'
                   height={360}
                   width={270}
                   className={styles.infoImgRight}
@@ -123,6 +125,7 @@ function About() {
             <div className={classNames(styles.tile, styles.thirdTile)}>
               <img
                 src={photo3.src}
+                alt='Sensei Tomasz Mrowiec'
                 height={270}
                 width={480}
                 className={styles.infoImg}
