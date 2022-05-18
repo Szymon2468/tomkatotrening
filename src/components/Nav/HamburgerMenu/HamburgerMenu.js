@@ -23,6 +23,7 @@ function HamburgerMenu({ logoClicked }) {
     <>
       <div className={styles.hamburgerMenuIcon}>
         <Hamburger
+          role='button'
           toggled={isHamburgerMenuOpen}
           toggle={setIsHamburgerMenuOpen}
         />
