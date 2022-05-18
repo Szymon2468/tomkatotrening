@@ -55,6 +55,7 @@ function Nav({ isNavBackgroundTransparent }) {
             src={logo.src}
             width={273}
             height={70}
+            alt='logo'
             onClick={() => {
               setLogoClicked(!logoClicked);
               window.location.href = '/';
