@@ -1,7 +1,17 @@
 import '../styles/globals.scss';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      {' '}
+      <NextSeo
+        title='tomkatotrening'
+        description='Treningi Oyama Karate Polska - Katowice - Siemianowice Ślaśkie, prowadzone przez Sensei Tomasza Mrowca - 4 Dan'
+        canonical='https://www.tomkatotrening.pl/'
+      />
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
