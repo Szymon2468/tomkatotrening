@@ -1,5 +1,5 @@
 import styles from './Footer.module.scss';
-import logo from '../../assets/logo.webp';
+import logo from '../../assets/Logo.webp';
 import Image from 'next/image';
 import Link from 'next/link';
 import classNames from 'classnames';
