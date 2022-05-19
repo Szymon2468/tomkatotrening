@@ -66,15 +66,22 @@ function Index() {
     </>
   );
   return (
-    <GeneralAboutPage
-      name={'GRUPA FITNESS'}
-      imgSrc={img}
-      imgAlt={'Sensei Tomasz Mrowiec'}
-      text={text}
-      imgClass={styles.img}
-      textClass={styles.text}
-      contentClass={styles.content}
-    />
+    <>
+      <NextSeo
+        title='tomkatotrening'
+        description='tomkatotrening - treningi fitness - poprawa kondycji i samopoczucia'
+        canonical='https://www.tomkatotrening.pl/grupy/grupa-fitness'
+      />
+      <GeneralAboutPage
+        name={'GRUPA FITNESS'}
+        imgSrc={img}
+        imgAlt={'Sensei Tomasz Mrowiec'}
+        text={text}
+        imgClass={styles.img}
+        textClass={styles.text}
+        contentClass={styles.content}
+      />
+    </>
   );
 }
 

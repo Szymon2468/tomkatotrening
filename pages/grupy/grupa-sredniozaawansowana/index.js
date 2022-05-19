@@ -57,16 +57,23 @@ function Index() {
   );
 
   return (
-    <GeneralAboutPage
-      name={'GRUPA ŚREDNIOZAAWANSOWANA'}
-      imgSrc={img}
-      imgAlt={'Sensei Tomasz Mrowiec'}
-      text={text}
-      imgClass={styles.img}
-      textClass={styles.text}
-      contentClass={styles.content}
-      headerClass={styles.header}
-    />
+    <>
+      <NextSeo
+        title='tomkatotrening'
+        description='tomkatotrening - treningi Oyama Karate dla średniozaawansowanych'
+        canonical='https://www.tomkatotrening.pl/grupy/grupa-sredniozaawansowana'
+      />
+      <GeneralAboutPage
+        name={'GRUPA ŚREDNIOZAAWANSOWANA'}
+        imgSrc={img}
+        imgAlt={'Sensei Tomasz Mrowiec'}
+        text={text}
+        imgClass={styles.img}
+        textClass={styles.text}
+        contentClass={styles.content}
+        headerClass={styles.header}
+      />
+    </>
   );
 }
 

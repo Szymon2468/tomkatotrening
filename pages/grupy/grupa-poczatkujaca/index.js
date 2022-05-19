@@ -42,15 +42,22 @@ const text = (
 
 function Index() {
   return (
-    <GeneralAboutPage
-      name={'GRUPA POCZĄTKUJĄCA'}
-      imgSrc={img}
-      imgAlt={'Sensei Tomasz Mrowiec'}
-      text={text}
-      imgClass={styles.img}
-      textClass={styles.text}
-      contentClass={styles.content}
-    />
+    <>
+      <NextSeo
+        title='tomkatotrening'
+        description='tomkatotrening - treningi Oyama Karate dla początkujących'
+        canonical='https://www.tomkatotrening.pl/grupy/grupa-poczatkujaca'
+      />
+      <GeneralAboutPage
+        name={'GRUPA POCZĄTKUJĄCA'}
+        imgSrc={img}
+        imgAlt={'Sensei Tomasz Mrowiec'}
+        text={text}
+        imgClass={styles.img}
+        textClass={styles.text}
+        contentClass={styles.content}
+      />
+    </>
   );
 }
 

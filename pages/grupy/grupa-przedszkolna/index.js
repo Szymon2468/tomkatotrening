@@ -32,15 +32,22 @@ const text = (
 
 function Index() {
   return (
-    <GeneralAboutPage
-      name={'GRUPA PRZEDSZKOLNA'}
-      imgSrc={img}
-      imgAlt={'Sensei Tomasz Mrowiec'}
-      text={text}
-      imgClass={styles.img}
-      textClass={styles.text}
-      contentClass={styles.content}
-    />
+    <>
+      <NextSeo
+        title='tomkatotrening'
+        description='tomkatotrening - treningi Oyama Karate dla przedszkolaków'
+        canonical='https://www.tomkatotrening.pl/grupy/grupa-przedszkolna'
+      />
+      <GeneralAboutPage
+        name={'GRUPA PRZEDSZKOLNA'}
+        imgSrc={img}
+        imgAlt={'Sensei Tomasz Mrowiec'}
+        text={text}
+        imgClass={styles.img}
+        textClass={styles.text}
+        contentClass={styles.content}
+      />
+    </>
   );
 }
 

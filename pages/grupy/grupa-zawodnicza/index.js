@@ -63,15 +63,22 @@ function Index() {
   );
 
   return (
-    <GeneralAboutPage
-      name={'GRUPA ZAWODNICZA'}
-      imgSrc={img}
-      imgAlt={'Sensei Tomasz Mrowiec'}
-      text={text}
-      imgClass={styles.img}
-      textClass={styles.text}
-      contentClass={styles.content}
-    />
+    <>
+      <NextSeo
+        title='tomkatotrening'
+        description='tomkatotrening - treningi Oyama Karate dla zawodników'
+        canonical='https://www.tomkatotrening.pl/grupy/grupa-zawodnicza'
+      />
+      <GeneralAboutPage
+        name={'GRUPA ZAWODNICZA'}
+        imgSrc={img}
+        imgAlt={'Sensei Tomasz Mrowiec'}
+        text={text}
+        imgClass={styles.img}
+        textClass={styles.text}
+        contentClass={styles.content}
+      />
+    </>
   );
 }
 
