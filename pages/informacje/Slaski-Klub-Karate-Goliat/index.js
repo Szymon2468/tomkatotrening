@@ -3,6 +3,7 @@ import styles from './index.module.scss';
 import img from '../../../src/assets/information/skk_goliat_info_image.webp';
 import linkImg from '../../../src/assets/information/skk_goliat_info_image_link.webp';
 import classNames from 'classnames';
+import { NextSeo } from 'next-seo';
 
 function Index() {
   return (

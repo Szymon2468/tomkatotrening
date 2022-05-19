@@ -3,6 +3,7 @@ import styles from './contact.module.scss';
 import { BsTelephoneFill } from 'react-icons/bs';
 import { IoMdMail } from 'react-icons/io';
 import { BsFacebook } from 'react-icons/bs';
+import { NextSeo } from 'next-seo';
 
 function ContactPage() {
   return (

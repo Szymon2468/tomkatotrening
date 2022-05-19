@@ -3,6 +3,7 @@ import GeneralAboutPage from '../../../src/components/GeneralAboutPage/GeneralAb
 import img from '../../../src/assets/groups/fighters_group_image.webp';
 import styles from './index.module.scss';
 import useWindowSize from '../../../src/hooks/useWindowSize';
+import { NextSeo } from 'next-seo';
 
 function Index() {
   const windowSize = useWindowSize();

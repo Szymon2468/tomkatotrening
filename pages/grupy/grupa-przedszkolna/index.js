@@ -2,6 +2,7 @@ import React from 'react';
 import GeneralAboutPage from '../../../src/components/GeneralAboutPage/GeneralAboutPage';
 import img from '../../../src/assets/groups/preschoolers_group_image.webp';
 import styles from './index.module.scss';
+import { NextSeo } from 'next-seo';
 
 const text = (
   <>

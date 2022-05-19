@@ -4,6 +4,7 @@ import photo2 from '../../src/assets/homepage/photo2.webp';
 import photo3 from '../../src/assets/homepage/photo3.webp';
 import MasterLayout from '../../src/components/MasterLayout/MasterLayout';
 import classNames from 'classnames';
+import { NextSeo } from 'next-seo';
 
 function About() {
   return (

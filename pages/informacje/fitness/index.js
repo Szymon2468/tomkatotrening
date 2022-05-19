@@ -3,6 +3,7 @@ import GeneraslInfoPage from '../../../src/components/GeneralInfoPage/GeneraslIn
 import img from '../../../src/assets/information/fitness_info_image.webp';
 import styles from './index.module.scss';
 import classNames from 'classnames';
+import { NextSeo } from 'next-seo';
 
 function Index() {
   return (

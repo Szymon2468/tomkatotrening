@@ -9,6 +9,7 @@ import GeneraslInfoPage from '../../../src/components/GeneralInfoPage/GeneraslIn
 import { schedule } from '../../../src/configs/schedule';
 import useWindowSize from '../../../src/hooks/useWindowSize';
 import styles from './index.module.scss';
+import { NextSeo } from 'next-seo';
 
 const hours = ['16:00', '17:00', '17:45', '18:45', '19:00', '20:00'];
 const allDays = ['Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek'];
