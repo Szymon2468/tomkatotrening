@@ -12,7 +12,8 @@ function MyApp({ Component, pageProps }) {
           url: 'https://tomkatotrening.pl/',
           type: 'article',
           title: 'tomkatotrening - treningi Oyama Karate',
-          description='Treningi Oyama Karate Polska - Katowice - Siemianowice Ślaśkie, prowadzone przez Sensei Tomasza Mrowca - 4 Dan',
+          description:
+            'Treningi Oyama Karate Polska - Katowice - Siemianowice Ślaśkie, prowadzone przez Sensei Tomasza Mrowca - 4 Dan',
           site_name: 'tomkatotrening - treningi Oyama Karate'
         }}
         additionalMetaTags={[
