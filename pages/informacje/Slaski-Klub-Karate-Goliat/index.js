@@ -45,13 +45,21 @@ function Index() {
               <p>
                 Więcej informacji dotyczących Śląskiego Klubu Karate
                 &quot;Goliat&quot; znajdziesz na oficjalnej stronie{' '}
-                <a href='www.karategoliat.pl' target='_blank' rel='noreferrer'>
+                <a
+                  href='http://www.karategoliat.pl'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   www.karategoliat.pl
                 </a>
               </p>
             </div>
 
-            <a href='http://kswgoliat.pl/' target='_blank' rel='noreferrer'>
+            <a
+              href='http://www.karategoliat.pl'
+              target='_blank'
+              rel='noreferrer'
+            >
               <img
                 src={linkImg.src}
                 alt='Sensei Tomasz Mrowiec'

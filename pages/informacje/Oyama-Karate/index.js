@@ -44,7 +44,7 @@ function Index() {
               stanowią pomost pomiędzy uczeniem podstaw a realną walką.
             </p>
           </div>
-          <Link href='www.oyama-karate.pl'>
+          <Link href='https://www.oyama-karate.pl'>
             <img
               src={linkImg.src}
               alt='Sensei Tomasz Mrowiec'
