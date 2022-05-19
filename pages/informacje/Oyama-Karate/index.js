@@ -69,7 +69,7 @@ function Index() {
               stronie{' '}
               <a
                 className={styles.link}
-                href='www.oyama-karate.pl'
+                href='https://www.oyama-karate.pl'
                 target={'_blank'}
                 rel='noreferrer'
               >
