@@ -66,7 +66,12 @@ function Index() {
             <p>
               Więcej informacji dotyczącej Oyama Karate znajdziesz na oficjalnej
               stronie{' '}
-              <a className={styles.link} href='www.oyama-karate.pl'>
+              <a
+                className={styles.link}
+                href='www.oyama-karate.pl'
+                target={'_blank'}
+                rel='noreferrer'
+              >
                 www.oyama-karate.pl
               </a>
             </p>
