@@ -251,8 +251,8 @@ function Index() {
           </p>
           <br />
           <p className='smaller'>
-            Koszt treningów karate wynosi 120zł/miesiąc + jednorazowa opłata na
-            dany sezon w wysokości 40zł do Klubu oraz organizacji Oyama PFK
+            Koszt treningów karate wynosi 150zł/miesiąc + jednorazowa opłata na
+            dany sezon w wysokości 50zł do Klubu oraz organizacji Oyama PFK
             (Oyama Polska Federacja Karate) zawierającą również roczną składkę
             ubezpieczeniową. W ramach jednej składki można trenować do 5 razy w
             tygodniu we wszystkich naszych lokalizacjach! Istnieje możliwość
@@ -260,16 +260,15 @@ function Index() {
           </p>
           <br />
           <p className='smaller'>
-            Koszt zajęć fitness wynosi 110zł/miesiąc lub 20zł/jednorazowe
-            wejście. Dla osób kontynuujących udział w treningach miesięczna
-            składka wynosi 100zł.
+            Koszt zajęć fitness wynosi 120zł/miesiąc lub 30zł/jednorazowe
+            wejście.
           </p>
           <br />
           <h3 className={styles.important}>WAŻNE!</h3>
           <p className='smaller'>
             Warunkiem dopuszczjącym do uczestnictwa w zajęciach karate i fitness
             jest złożenie &quot;Deklaracji Klubowej/Członkowskiej&quot; na dany
-            sezon treningowy (2020/2021) oraz bezwzględne zapoznanie się z
+            sezon treningowy (2023/2024) oraz bezwzględne zapoznanie się z
             &quot;Regulaminem Śląskiego Klubu Karate Goliat&quot;,
             &quot;Regulaminem dotyczącym składek&quot;, &quot;Regulaminem
             Covid-19&quot; i &quot;Klauzulą RODO&quot;! Regulaminy i dokumenty
@@ -288,14 +287,13 @@ function Index() {
 
           <div className={styles.maps}>
             <div className={styles.mapContainer}>
-              <p>KATOWICE, ul. Iłłakowiczówny 13</p>{' '}
-              <p>Szkoła Podstawowa Nr 36</p>
+              <p>KATOWICE, ul. Ordona 3a</p> <p>Szkoła Podstawowa Nr 62</p>
               <div className={styles.map}>
                 <iframe
-                  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2550.0162758332103!2d19.017627815708277!3d50.27295470801946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ce23bc3915c7%3A0xa135506eade90a50!2zScWCxYJha293aWN6w7N3bnkgMTMsIDQwLTEzNCBLYXRvd2ljZQ!5e0!3m2!1sen!2spl!4v1652262719943!5m2!1sen!2spl'
+                  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2550.2344263976033!2d19.02593051570814!3d50.268881308312245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ce2ff1d84be5%3A0x5ffa1290e9d8af09!2sOrdona%203A%2C%2040-164%20Katowice!5e0!3m2!1sen!2spl!4v1652262955133!5m2!1sen!2spl'
                   width='100%'
-                  title='lokalizacja Szkoły Podstawowej Nr 36 w Katowicach'
                   height='100%'
+                  title='lokalizacja Szkoły Podstawowej Nr 62 w Katowicach'
                   allowFullScreen=''
                   loading='lazy'
                   referrerpolicy='no-referrer-when-downgrade'
@@ -304,13 +302,14 @@ function Index() {
             </div>
 
             <div className={styles.mapContainer}>
-              <p>KATOWICE, ul. Ordona 3a</p> <p>Szkoła Podstawowa Nr 62</p>
+              <p>KATOWICE, ul. Iłłakowiczówny 13</p>{' '}
+              <p>Szkoła Podstawowa Nr 36</p>
               <div className={styles.map}>
                 <iframe
-                  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2550.2344263976033!2d19.02593051570814!3d50.268881308312245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ce2ff1d84be5%3A0x5ffa1290e9d8af09!2sOrdona%203A%2C%2040-164%20Katowice!5e0!3m2!1sen!2spl!4v1652262955133!5m2!1sen!2spl'
+                  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2550.0162758332103!2d19.017627815708277!3d50.27295470801946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ce23bc3915c7%3A0xa135506eade90a50!2zScWCxYJha293aWN6w7N3bnkgMTMsIDQwLTEzNCBLYXRvd2ljZQ!5e0!3m2!1sen!2spl!4v1652262719943!5m2!1sen!2spl'
                   width='100%'
+                  title='lokalizacja Szkoły Podstawowej Nr 36 w Katowicach'
                   height='100%'
-                  title='lokalizacja Szkoły Podstawowej Nr 62 w Katowicach'
                   allowFullScreen=''
                   loading='lazy'
                   referrerpolicy='no-referrer-when-downgrade'
