@@ -1,5 +1,5 @@
 import styles from './Nav.module.scss';
-import logo from '../../assets/Logo.webp';
+import logo from '../../assets/Logo.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import classNames from 'classnames';

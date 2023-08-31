@@ -5,6 +5,12 @@ import { BsTelephoneFill, BsFillArrowRightCircleFill } from 'react-icons/bs';
 import { IoMdMail } from 'react-icons/io';
 import MasterLayout from '../src/components/MasterLayout/MasterLayout';
 import styles from './index.module.scss';
+import fightersPhoto from '../src/assets/groups/fighters_group_image.webp';
+import begginersPhoto from '../src/assets/groups/begginers_group_image.webp';
+import fitnessPhoto from '../src/assets/groups/fitness_group_image.webp';
+import midPhoto from '../src/assets/groups/mid_group_image.webp';
+import preschoolersPhoto from '../src/assets/groups/preschoolers_group_image.webp';
+import ImportantInfo from '../src/components/ImportantInfo/ImportantInfo';
 
 let inc = 1;
 let i = 0;
@@ -89,6 +95,33 @@ export default function Home() {
             </div>
           </section>
 
+          <ImportantInfo>
+            <h2>WAŻNE INFORMACJE!</h2>
+            <ul>
+              <li>
+                <h3>
+                  Trwają zapisy do naszych grup treningowych w sezonie 2023/24
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  Zajęcia karate oraz fitness w Szkole Podstawowej nr 62 w
+                  Katowicach (ul. Ordona 3a) ruszają od 18 września!
+                </h3>
+                <p>
+                  Godziny zajęć podane w harmonogramie dla tych grup mogą ulec
+                  zmianie.
+                </p>
+              </li>
+              <li>
+                <h3>
+                  Zajęcia karate w Szkole Podstawowej nr 1 w Siemianowicach
+                  Śląskich (ul. Niepodległości 71) ruszają od 4 września!
+                </h3>
+              </li>
+            </ul>
+          </ImportantInfo>
+
           <section>
             <div className='container'>
               <h2 className={styles.sectionHeader}>
@@ -155,7 +188,7 @@ export default function Home() {
                     w miłej atmosferze. Tematyka zajęć i korzyści płynące z trenowania Karate Oyama: 
                     nauka podstawowych technik Karate Oyama,
                     ćwiczenia poprawiające ogólną sprawność fizyczną...`}
-                  img={'../src/assets/homepage/photo3.webp'}
+                  img={preschoolersPhoto.src}
                   link='/grupy/grupa-przedszkolna'
                 ></GroupCard>
 
@@ -165,7 +198,7 @@ export default function Home() {
                   osobowe grupy dzieci w przedziale wiekowym 7 – 12 lat, które rozpoczęły
                   poznawanie tajników Karate Oyama. Przygodę z karate w tych grupach mogą
                   rozpocząć dzieci do 14 roku życia. Zajęcia prowadzę na podstawie systemu szkolenia Oyama Karate...`}
-                  img={'../src/assets/homepage/photo3.webp'}
+                  img={begginersPhoto.src}
                   link='/grupy/grupa-poczatkujaca'
                 ></GroupCard>
 
@@ -175,7 +208,7 @@ export default function Home() {
                   20 osobowe grupy dzieci w przedziale wiekowym 8 - 14 lat, które mają już
                   za sobą przynajmniej dwa lata treningu. Zajęcia prowadzę na podstawie systemu szkolenia Oyama Karate, a także w
                   oparciu o swoje...`}
-                  img={'../src/assets/homepage/photo3.webp'}
+                  img={midPhoto.src}
                   link='/grupy/grupa-sredniozaawansowana'
                 ></GroupCard>
 
@@ -186,7 +219,7 @@ export default function Home() {
                   rekreacji ruchowej przy jednoczesnym zgłębianiu tajników Oyama Karate.
                   Podczas zajęć korzystamy ze sprzętu specjalistycznego i sportowego tj.
                   worki i tarcze treningowe...`}
-                  img={'../src/assets/homepage/photo3.webp'}
+                  img={fightersPhoto.src}
                   link='/grupy/grupa-zawodnicza'
                 ></GroupCard>
 
@@ -196,7 +229,7 @@ export default function Home() {
                   mężczyźni powyżej 16 roku życia. Ze względu na charakterystykę treningu
                   (wysoka intensywność) zajęcia nie przekraczają czasu 60 minut. Treningi
                   prowadzę na podstawie doświadczeń z dotychczasowej pracy szkoleniowej...`}
-                  img={'../src/assets/homepage/photo3.webp'}
+                  img={fitnessPhoto.src}
                   link='/grupy/grupa-fitness'
                 ></GroupCard>
 
@@ -223,9 +256,9 @@ const GroupCard = ({ title, description, img, link }) => {
         <div
           className={styles.groupCardFront}
           style={{
-            backgroundImage: `background-image: linear-gradient(
-            rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.5)
+            backgroundImage: `linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.3)
           ),
           url(${img});`
           }}

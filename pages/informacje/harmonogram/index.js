@@ -10,6 +10,7 @@ import { schedule } from '../../../src/configs/schedule';
 import useWindowSize from '../../../src/hooks/useWindowSize';
 import styles from './index.module.scss';
 import { NextSeo } from 'next-seo';
+import ImportantInfo from '../../../src/components/ImportantInfo/ImportantInfo';
 
 const hours = ['16:00', '17:00', '17:45', '18:45', '19:00', '20:00'];
 const allDays = ['Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek'];
@@ -229,6 +230,33 @@ function Index() {
               </div>
             </span>
           </div>
+
+          <ImportantInfo>
+            <h2>WAŻNE INFORMACJE!</h2>
+            <ul>
+              <li>
+                <h3>
+                  Trwają zapisy do naszych grup treningowych w sezonie 2023/24
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  Zajęcia karate oraz fitness w Szkole Podstawowej nr 62 w
+                  Katowicach (ul. Ordona 3a) ruszają od 18 września!
+                </h3>
+                <p>
+                  Godziny zajęć podane w harmonogramie dla tych grup mogą ulec
+                  zmianie.
+                </p>
+              </li>
+              <li>
+                <h3>
+                  Zajęcia karate w Szkole Podstawowej nr 1 w Siemianowicach
+                  Śląskich (ul. Niepodległości 71) ruszają od 4 września!
+                </h3>
+              </li>
+            </ul>
+          </ImportantInfo>
 
           <h3>Kilka przydatnych informacji...</h3>
           <br />
