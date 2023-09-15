@@ -115,6 +115,34 @@ function Index() {
       />
       <GeneraslInfoPage name={'HARMONOGRAM'}>
         <div className='container'>
+          <ImportantInfo>
+            <h2>WAŻNE INFORMACJE!</h2>
+            <ul>
+              <li>
+                <h3>
+                  Z uwagi na sprawy i trudności organizacyjne niezależne ode
+                  mnie informuję, że zajęcia grup Oyama Karate i Fitness, które
+                  odbywały się w Szkole Podstawowej Nr 62 mam nadzieję wznowić
+                  od października.
+                  <br /> <br />
+                  Miejsce, dni i godziny zajęć mogą ulec zmianie.
+                  <br /> <br />
+                  Proszę aktualny stan przyjąć z wyrozumiałością. W razie pytań
+                  zachęcam do kontaktu telefonicznego (600 288 637).
+                </h3>
+                <p>
+                  Oczywiście można brać udział w treningach innych grup w
+                  pozostałych placówkach.
+                </p>
+              </li>
+              <li>
+                <h3>
+                  Zajęcia karate w Szkole Podstawowej nr 1 w Siemianowicach
+                  Śląskich (ul. Niepodległości 47) już trwają!
+                </h3>
+              </li>
+            </ul>
+          </ImportantInfo>
           <div className={styles.filtersContainer}>
             <h2>Filtruj harmonogram</h2>
             <div className={styles.filters}>
@@ -231,33 +259,6 @@ function Index() {
             </span>
           </div>
 
-          <ImportantInfo>
-            <h2>WAŻNE INFORMACJE!</h2>
-            <ul>
-              <li>
-                <h3>
-                  Trwają zapisy do naszych grup treningowych w sezonie 2023/24
-                </h3>
-              </li>
-              <li>
-                <h3>
-                  Zajęcia karate oraz fitness w Szkole Podstawowej nr 62 w
-                  Katowicach (ul. Ordona 3a) ruszają od 18 września!
-                </h3>
-                <p>
-                  Godziny zajęć podane w harmonogramie dla tych grup mogą ulec
-                  zmianie.
-                </p>
-              </li>
-              <li>
-                <h3>
-                  Zajęcia karate w Szkole Podstawowej nr 1 w Siemianowicach
-                  Śląskich (ul. Niepodległości 71) ruszają od 4 września!
-                </h3>
-              </li>
-            </ul>
-          </ImportantInfo>
-
           <h3>Kilka przydatnych informacji...</h3>
           <br />
           <p className='smaller'>
@@ -294,10 +295,10 @@ function Index() {
           <br />
           <h3 className={styles.important}>WAŻNE!</h3>
           <p className='smaller'>
-            Warunkiem dopuszczjącym do uczestnictwa w zajęciach karate i fitness
-            jest złożenie &quot;Deklaracji Klubowej/Członkowskiej&quot; na dany
-            sezon treningowy (2023/2024) oraz bezwzględne zapoznanie się z
-            &quot;Regulaminem Śląskiego Klubu Karate Goliat&quot;,
+            Warunkiem dopuszczającym do uczestnictwa w zajęciach karate i
+            fitness jest złożenie &quot;Deklaracji Klubowej/Członkowskiej&quot;
+            na dany sezon treningowy (2023/2024) oraz bezwzględne zapoznanie się
+            z &quot;Regulaminem Śląskiego Klubu Karate Goliat&quot;,
             &quot;Regulaminem dotyczącym składek&quot;, &quot;Regulaminem
             Covid-19&quot; i &quot;Klauzulą RODO&quot;! Regulaminy i dokumenty
             do pobrania dostępne są na oficjalnej stronie Klubu:{' '}

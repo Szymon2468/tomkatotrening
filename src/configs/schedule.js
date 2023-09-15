@@ -5,7 +5,8 @@ export const schedule = [
     city: 'Katowice',
     address: 'ul. Ordona 3a - Szkoła Podstawowa Nr 62',
     groupName: 'Grupa przedszkolna',
-    link: '/grupy/grupa-przedszkolna'
+    link: '/grupy/grupa-przedszkolna',
+    additionalInfo: '(zajęcia w SP62 tymczasowo zawieszone)'
   },
   {
     day: 'Wtorek',
@@ -13,7 +14,8 @@ export const schedule = [
     city: 'Katowice',
     address: 'ul. Ordona 3a - Szkoła Podstawowa Nr 62',
     groupName: 'Grupa początkująca',
-    link: '/grupy/grupa-poczatkujaca'
+    link: '/grupy/grupa-poczatkujaca',
+    additionalInfo: '(zajęcia w SP62 tymczasowo zawieszone)'
   },
   {
     day: 'Czwartek',
@@ -21,7 +23,8 @@ export const schedule = [
     city: 'Katowice',
     address: 'ul. Ordona 3a - Szkoła Podstawowa Nr 62',
     groupName: 'Grupa początkująca',
-    link: '/grupy/grupa-poczatkujaca'
+    link: '/grupy/grupa-poczatkujaca',
+    additionalInfo: '(zajęcia w SP62 tymczasowo zawieszone)'
   },
   {
     day: 'Wtorek',
@@ -29,7 +32,8 @@ export const schedule = [
     city: 'Katowice',
     address: 'ul. Ordona 3a - Szkoła Podstawowa Nr 62',
     groupName: 'Grupa średniozaawansowana',
-    link: '/grupy/grupa-sredniozaawansowana'
+    link: '/grupy/grupa-sredniozaawansowana',
+    additionalInfo: '(zajęcia w SP62 tymczasowo zawieszone)'
   },
   {
     day: 'Czwartek',
@@ -37,7 +41,8 @@ export const schedule = [
     city: 'Katowice',
     address: 'ul. Ordona 3a - Szkoła Podstawowa Nr 62',
     groupName: 'Grupa średniozaawansowana',
-    link: '/grupy/grupa-sredniozaawansowana'
+    link: '/grupy/grupa-sredniozaawansowana',
+    additionalInfo: '(zajęcia w SP62 tymczasowo zawieszone)'
   },
   {
     day: 'Poniedziałek',
@@ -45,7 +50,8 @@ export const schedule = [
     city: 'Katowice',
     address: 'ul. Ordona 3a - Szkoła Podstawowa Nr 62',
     groupName: 'Grupa zawodnicza',
-    link: '/grupy/grupa-zawodnicza'
+    link: '/grupy/grupa-zawodnicza',
+    additionalInfo: '(zajęcia w SP62 tymczasowo zawieszone)'
   },
   {
     day: 'Środa',
@@ -53,7 +59,8 @@ export const schedule = [
     city: 'Katowice',
     address: 'ul. Ordona 3a - Szkoła Podstawowa Nr 62',
     groupName: 'Grupa zawodnicza',
-    link: '/grupy/grupa-zawodnicza'
+    link: '/grupy/grupa-zawodnicza',
+    additionalInfo: '(zajęcia w SP62 tymczasowo zawieszone)'
   },
   {
     day: 'Wtorek',
@@ -95,7 +102,8 @@ export const schedule = [
     city: 'Katowice',
     address: 'ul. Ordona 3a - Szkoła Podstawowa Nr 62',
     groupName: 'Grupa fitness',
-    link: '/grupy/grupa-fitness'
+    link: '/grupy/grupa-fitness',
+    additionalInfo: '(zajęcia w SP62 tymczasowo zawieszone)'
   },
   {
     day: 'Czwartek',
@@ -103,6 +111,7 @@ export const schedule = [
     city: 'Katowice',
     address: 'ul. Ordona 3a - Szkoła Podstawowa Nr 62',
     groupName: 'Grupa fitness',
-    link: '/grupy/grupa-fitness'
+    link: '/grupy/grupa-fitness',
+    additionalInfo: '(zajęcia w SP62 tymczasowo zawieszone)'
   }
 ];

@@ -100,23 +100,25 @@ export default function Home() {
             <ul>
               <li>
                 <h3>
-                  Trwają zapisy do naszych grup treningowych w sezonie 2023/24
-                </h3>
-              </li>
-              <li>
-                <h3>
-                  Zajęcia karate oraz fitness w Szkole Podstawowej nr 62 w
-                  Katowicach (ul. Ordona 3a) ruszają od 18 września!
+                  Z uwagi na sprawy i trudności organizacyjne niezależne ode
+                  mnie informuję, że zajęcia grup Oyama Karate i Fitness, które
+                  odbywały się w Szkole Podstawowej Nr 62 mam nadzieję wznowić
+                  od października.
+                  <br /> <br />
+                  Miejsce, dni i godziny zajęć mogą ulec zmianie.
+                  <br /> <br />
+                  Proszę aktualny stan przyjąć z wyrozumiałością. W razie pytań
+                  zachęcam do kontaktu telefonicznego (600 288 637).
                 </h3>
                 <p>
-                  Godziny zajęć podane w harmonogramie dla tych grup mogą ulec
-                  zmianie.
+                  Oczywiście można brać udział w treningach innych grup w
+                  pozostałych placówkach.
                 </p>
               </li>
               <li>
                 <h3>
                   Zajęcia karate w Szkole Podstawowej nr 1 w Siemianowicach
-                  Śląskich (ul. Niepodległości 71) ruszają od 4 września!
+                  Śląskich (ul. Niepodległości 47) już trwają!
                 </h3>
               </li>
             </ul>
