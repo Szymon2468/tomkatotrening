@@ -100,25 +100,56 @@ export default function Home() {
             <ul>
               <li>
                 <h3>
-                  Z uwagi na sprawy i trudności organizacyjne niezależne ode
-                  mnie informuję, że zajęcia grup Oyama Karate i Fitness, które
-                  odbywały się w Szkole Podstawowej Nr 62 mam nadzieję wznowić
-                  od października.
-                  <br /> <br />
-                  Miejsce, dni i godziny zajęć mogą ulec zmianie.
-                  <br /> <br />
-                  Proszę aktualny stan przyjąć z wyrozumiałością. W razie pytań
-                  zachęcam do kontaktu telefonicznego (600 288 637).
+                  Od października startują treningi w Szkole Podstawowej Nr 62
+                  oraz Nr 36!
+                  <br /> Dla wszystkich grup (włącznie z grupą Siemianowicką -
+                  SP Nr 1) nowe dni i godziny zajęć (obowiązują OD
+                  PAŹDZIERNIKA):
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  Zajęcia karate w Szkole Podstawowej nr 62 w Katowicach (ul.
+                  Ordona 3a):
                 </h3>
                 <p>
-                  Oczywiście można brać udział w treningach innych grup w
-                  pozostałych placówkach.
+                  W poniedziałki i czwartki:
+                  <br />
+                  - grupa początkująca: 16:30 - 17:30
+                  <br />
+                  - grupa zaawansowana: 17:30 - 18:30
+                  <br />- grupa zawodnicza: 18:30- 19:45
+                  <br />- grupa przedszkolna - piątki 16:30 - 17:30
                 </p>
               </li>
               <li>
                 <h3>
                   Zajęcia karate w Szkole Podstawowej nr 1 w Siemianowicach
-                  Śląskich (ul. Niepodległości 47) już trwają!
+                  Śląskich (ul. Niepodległości 47):
+                </h3>
+                <p>
+                  Środy: 17:00 - 18:00
+                  <br />
+                  Piątki: 18:15 - 19:15
+                </p>
+              </li>
+              <li>
+                <h3>
+                  Zajęcia karate w Szkole Podstawowej nr 36 w Katowicach (ul.
+                  Iłłakowiczówny 13):
+                </h3>
+                <p>Zajęcia we wtorki - godzina niestety jeszcze nieznana.</p>
+              </li>
+              <li>
+                <h3>
+                  Zajęcia Fitness niestety nadal pozostają zawieszone. Szukamy
+                  sali, na której moglibyśmy trenować.
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  Proszę aktualny stan przyjąć z wyrozumiałością. W razie pytań
+                  zachęcam do kontaktu telefonicznego (600 288 637).
                 </h3>
               </li>
             </ul>
