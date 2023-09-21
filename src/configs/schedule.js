@@ -64,12 +64,21 @@ export const schedule = [
   },
   {
     day: 'Wtorek',
-    hour: '16:00',
+    hour: '17:00',
     city: 'Katowice',
     address: 'ul. Iłłakowiczówny 13 - Szkoła Podstawowa Nr 36',
     groupName: 'Grupa początkująca',
     link: '/grupy/grupa-poczatkujaca',
-    additionalInfo: '(zajęcia w SP36 od października - godzina nieznana)'
+    additionalInfo: '(zajęcia w SP36 od października)'
+  },
+  {
+    day: 'Wtorek',
+    hour: '18:00',
+    city: 'Katowice',
+    address: 'ul. Iłłakowiczówny 13 - Szkoła Podstawowa Nr 36',
+    groupName: 'Grupa zawodnicza',
+    link: '/grupy/grupa-poczatkujaca',
+    additionalInfo: '(zajęcia w SP36 od października)'
   },
   {
     day: 'Poniedziałek',

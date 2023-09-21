@@ -12,7 +12,7 @@ import styles from './index.module.scss';
 import { NextSeo } from 'next-seo';
 import ImportantInfo from '../../../src/components/ImportantInfo/ImportantInfo';
 
-const hours = ['16:30', '17:00', '17:30', '18:30'];
+const hours = ['16:30', '17:00', '17:30', '18:00', '18:30'];
 const allDays = ['Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek'];
 
 function Index() {
@@ -138,7 +138,7 @@ function Index() {
                   - grupa początkująca: 16:30 - 17:30
                   <br />
                   - grupa zaawansowana: 17:30 - 18:30
-                  <br />- grupa zawodnicza: 18:30- 19:45
+                  <br />- grupa zawodnicza: 18:30 - 19:45
                   <br />- grupa przedszkolna - piątki 16:30 - 17:30
                 </p>
               </li>
@@ -158,7 +158,12 @@ function Index() {
                   Zajęcia karate w Szkole Podstawowej nr 36 w Katowicach (ul.
                   Iłłakowiczówny 13):
                 </h3>
-                <p>Zajęcia we wtorki - godzina niestety jeszcze nieznana.</p>
+                <p>
+                  Zajęcia we wtorki:
+                  <br />
+                  - grupa początkująca: 17:00 - 18:00
+                  <br />- grupa zawodnicza: 18:00 - 19:00
+                </p>
               </li>
               <li>
                 <h3>
