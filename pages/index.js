@@ -108,6 +108,13 @@ export default function Home() {
                 </h3>
               </li>
               <li>
+                <h3>Zajęcia FITNESS (rozwiązanie tymczasowe):</h3>
+                <p>
+                  We wtorki o godzinie 18:15 - treningi w Szkole Podstawowej nr
+                  36 w Katowicach (ul. Iłłakowiczówny 13)
+                </p>
+              </li>
+              <li>
                 <h3>
                   Zajęcia karate w Szkole Podstawowej nr 62 w Katowicach (ul.
                   Ordona 3a):
@@ -142,7 +149,7 @@ export default function Home() {
                   Zajęcia we wtorki:
                   <br />
                   - grupa początkująca: 17:00 - 18:00
-                  <br />- grupa zawodnicza: 18:00 - 19:00
+                  <br />- grupa fitness: 18:15
                 </p>
               </li>
               <li>

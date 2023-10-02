@@ -12,7 +12,7 @@ import styles from './index.module.scss';
 import { NextSeo } from 'next-seo';
 import ImportantInfo from '../../../src/components/ImportantInfo/ImportantInfo';
 
-const hours = ['16:30', '17:00', '17:30', '18:00', '18:30'];
+const hours = ['16:30', '17:00', '17:30', '18:00', '18:15', '18:30'];
 const allDays = ['Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek'];
 
 function Index() {
@@ -128,6 +128,13 @@ function Index() {
                 </h3>
               </li>
               <li>
+                <h3>Zajęcia FITNESS (rozwiązanie tymczasowe):</h3>
+                <p>
+                  We wtorki o godzinie 18:15 - treningi w Szkole Podstawowej nr
+                  36 w Katowicach (ul. Iłłakowiczówny 13)
+                </p>
+              </li>
+              <li>
                 <h3>
                   Zajęcia karate w Szkole Podstawowej nr 62 w Katowicach (ul.
                   Ordona 3a):
@@ -162,7 +169,7 @@ function Index() {
                   Zajęcia we wtorki:
                   <br />
                   - grupa początkująca: 17:00 - 18:00
-                  <br />- grupa zawodnicza: 18:00 - 19:00
+                  <br />- grupa fitness: 18:15
                 </p>
               </li>
               <li>

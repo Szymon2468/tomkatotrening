@@ -73,11 +73,11 @@ export const schedule = [
   },
   {
     day: 'Wtorek',
-    hour: '18:00',
+    hour: '18:15',
     city: 'Katowice',
     address: 'ul. Iłłakowiczówny 13 - Szkoła Podstawowa Nr 36',
-    groupName: 'Grupa zawodnicza',
-    link: '/grupy/grupa-poczatkujaca',
+    groupName: 'Grupa fitness',
+    link: '/grupy/grupa-fitness',
     additionalInfo: '(zajęcia w SP36 od października)'
   },
   {
@@ -97,21 +97,21 @@ export const schedule = [
     link: '/grupy/grupa-sredniozaawansowana'
   },
   {
-    day: 'Wtorek',
-    hour: '20:00',
-    city: 'Katowice',
-    address: 'ul. Ordona 3a - Szkoła Podstawowa Nr 62',
-    groupName: 'Grupa fitness',
-    link: '/grupy/grupa-fitness',
-    additionalInfo: '(zajęcia fitness ZAWIESZONE do odwołania)'
-  },
-  {
-    day: 'Czwartek',
-    hour: '20:00',
-    city: 'Katowice',
-    address: 'ul. Ordona 3a - Szkoła Podstawowa Nr 62',
-    groupName: 'Grupa fitness',
-    link: '/grupy/grupa-fitness',
-    additionalInfo: '(zajęcia fitness ZAWIESZONE do odwołania)'
+    // day: 'Wtorek',
+    // hour: '20:00',
+    // city: 'Katowice',
+    // address: 'ul. Ordona 3a - Szkoła Podstawowa Nr 62',
+    // groupName: 'Grupa fitness',
+    // link: '/grupy/grupa-fitness',
+    // additionalInfo: '(zajęcia fitness ZAWIESZONE do odwołania)'
   }
+  // {
+  //   day: 'Czwartek',
+  //   hour: '20:00',
+  //   city: 'Katowice',
+  //   address: 'ul. Ordona 3a - Szkoła Podstawowa Nr 62',
+  //   groupName: 'Grupa fitness',
+  //   link: '/grupy/grupa-fitness',
+  //   additionalInfo: '(zajęcia fitness ZAWIESZONE do odwołania)'
+  // }
 ];
